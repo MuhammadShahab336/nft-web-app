@@ -9,6 +9,9 @@ $primary: #AD00FF;
 }
 @import '~bootstrap/scss/bootstrap';
 
+.bg-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
 .bg-image-fixed{
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,5 +38,5 @@ $primary: #AD00FF;
 // font weight
 .fw-400 {
     font-family: 'Regular', sans-serif;
-    letter-spacing: 2.72px;
+    letter-spacing: 3.72px;
 }

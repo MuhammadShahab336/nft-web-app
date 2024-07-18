@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
         <div className="bg-image-fixed w-full h-full" style={{backgroundImage: `url(${mountain.src})`}}>
-            <div className="d-flex flex-column w-100 h-100 align-items-center justify-content-center">
-                <div style={{position: 'relative',width: 600, height: 600 }}>
+            <div className="d-flex flex-column w-100 h-100 align-items-center justify-content-center bg-overlay">
+                <div style={{position: 'relative',width: 650, height: 650 }}>
                     <Image
                         alt="Avatar"
                         src={avatar}
