@@ -1,3 +1,39 @@
+$primary: #AD00FF;
 
 
+@font-face {
+    font-family: 'Regular';
+    src: url('/font/regular2.otf');
+    font-weight: 400;
+    font-style: normal;
+}
 @import '~bootstrap/scss/bootstrap';
+
+.bg-image-fixed{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.bg-image {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.w-full {
+    width: 100%;
+}
+.h-full {
+    height: 100dvh;
+}
+
+// size
+.s-36 {
+    font-size: 2.25rem;
+}
+
+// font weight
+.fw-400 {
+    font-family: 'Regular', sans-serif;
+    letter-spacing: 2.72px;
+}
