@@ -1,5 +1,5 @@
 $primary: #AD00FF;
-
+$dark: #0E0E0E;
 
 @font-face {
     font-family: 'Regular';
@@ -7,7 +7,17 @@ $primary: #AD00FF;
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Bold';
+    src: url('/font/bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
 @import '~bootstrap/scss/bootstrap';
+
+body {
+    overflow-x: hidden;
+}
 
 .bg-overlay {
     background-color: rgba(0, 0, 0, 0.5);
@@ -29,6 +39,16 @@ $primary: #AD00FF;
 .h-full {
     height: 100dvh;
 }
+.min-h-full {
+    min-height: 100dvh;
+}
+.on-hover-zoom {
+    transition: all ease-in-out 0.3s;
+}
+.on-hover-zoom:hover {
+    transform: scale(1.05);
+    transition: all ease-in-out 0.3s;
+}
 
 // size
 .s-36 {
@@ -39,4 +59,8 @@ $primary: #AD00FF;
 .fw-400 {
     font-family: 'Regular', sans-serif;
     letter-spacing: 3.72px;
+}
+.fw-700 {
+    font-family: 'Bold', sans-serif;
+    letter-spacing: 8.72px;
 }

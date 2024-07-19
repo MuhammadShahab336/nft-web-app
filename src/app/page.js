@@ -1,13 +1,31 @@
 import Image from "next/image";
-import mountain from '../../public/bg1.jpeg'
-import avatar from '../../public/avatar1.png'
-import buttonBg from '../../public/button-bg1.svg'
+import mountain from '@public/bg1.jpeg'
+import avatar from '@public/avatar1.png'
+import BgEclipseIcon from "@/components/icons/BgEclipseIcon";
+import BgEclipseIcon2 from "@/components/icons/BgEclipseIcon2";
+import ConnectButton from "@/components/ConnectButton";
 
 export default function Home() {
   return (
     <>
-        <div className="bg-image-fixed w-full h-full" style={{backgroundImage: `url(${mountain.src})`}}>
+        <div className="bg-image-fixed w-full h-full overflow-hidden position-relative" style={{backgroundImage: `url(${mountain.src})`}}>
             <div className="d-flex flex-column w-100 h-100 align-items-center justify-content-center bg-overlay">
+                <BgEclipseIcon
+                    style={{
+                        position: 'absolute',
+                        top: 0,
+                        right: '-30px',
+                        height: '100dvh',
+                    }}
+                />
+                <BgEclipseIcon2
+                    style={{
+                        position: 'absolute',
+                        top: '80%',
+                        right: 0,
+                        width: '100%'
+                    }}
+                />
                 <div style={{position: 'relative',width: 650, height: 650 }}>
                     <Image
                         alt="Avatar"
@@ -20,14 +38,7 @@ export default function Home() {
                     />
                 </div>
 
-                <button
-                    className="btn bg-transparent border-0 bg-image position-relative s-36 fw-400 text-white text-uppercase py-3 px-5"
-                    style={{backgroundImage: `url(${buttonBg.src})`, top: '-100px'}}
-                >
-                    <span className="mb-2 d-block">
-                        connect
-                    </span>
-                </button>
+                <ConnectButton />
             </div>
         </div>
     </>
