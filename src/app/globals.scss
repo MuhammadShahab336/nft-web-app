@@ -1,10 +1,38 @@
 $primary: #AD00FF;
 $dark: #0E0E0E;
+$white: #FFFFFF;
+$success: #ADFF00;
+$secondary: #00C2FF;
+$warning: #FF8A00;
+$grey: #BCBCBC26;
+$header-bar: #161515;
 
+@font-face {
+    font-family: 'Light';
+    src: url('/font/light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
 @font-face {
     font-family: 'Regular';
     src: url('/font/regular2.otf');
     font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Regular2';
+    src: url('/font/regular3.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GothicRegular';
+    src: url('/font/GothicDemiRegular.ttf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LightBoxSemibold';
+    src: url('/font/lightbox-semibold-1.otf');
     font-style: normal;
 }
 @font-face {
@@ -13,12 +41,25 @@ $dark: #0E0E0E;
     font-weight: 700;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Bold2';
+    src: url('/font/bold2.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+
 @import '~bootstrap/scss/bootstrap';
 
 body {
     overflow-x: hidden;
 }
 
+.bg-grey {
+    background-color: $grey;
+}
+.bg-header-bar {
+    background-color: $header-bar;
+}
 .bg-overlay {
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -54,13 +95,65 @@ body {
 .s-36 {
     font-size: 2.25rem;
 }
+.s-62 {
+    font-size: 3.875rem;
+}
+.s-20 {
+    font-size: 1.25rem;
+}
+.s-16 {
+    font-size: 1rem;
+}
 
 // font weight
+.fw-300 {
+    font-family: 'Light', sans-serif;
+    letter-spacing: 3.72px;
+}
 .fw-400 {
     font-family: 'Regular', sans-serif;
     letter-spacing: 3.72px;
 }
+.fw-400-gothic {
+    font-family: 'GothicRegular', sans-serif;
+    letter-spacing: 3.72px;
+    font-weight: 400;
+}
+.fw-900-gothic {
+    font-family: 'GothicRegular', sans-serif;
+    letter-spacing: 3.72px;
+    font-weight: 900;
+}
+.fw-500 {
+    font-family: 'Regular2', sans-serif;
+    letter-spacing: 3.72px;
+}
+.fw-600 {
+    font-family: 'LightBoxSemibold', sans-serif;
+    letter-spacing: 3.72px;
+    font-weight: 600;
+}
 .fw-700 {
     font-family: 'Bold', sans-serif;
     letter-spacing: 8.72px;
+}
+.fw-900 {
+    font-family: 'Bold2', sans-serif;
+    // letter-spacing: 8.72px;
+}
+
+// border radius
+.rounded-20 {
+    border-radius: 1.25rem;
+}
+
+// line height
+.lh-1 {
+    line-height: 1;
+}
+
+.gradient-card1 {
+    border: 1px solid transparent;
+    background: linear-gradient($dark, $dark) padding-box, linear-gradient(180deg, #ADFF00 0%, rgba(104, 153, 0, 0) 100%) border-box;
+    border-radius: 15px;
 }
