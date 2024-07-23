@@ -2,7 +2,7 @@ import MenuIcon from "@/components/icons/MenuIcon";
 import Image from "next/image";
 import avatar from "@public/avatar2.png";
 import logo from "@public/logo.svg";
-import Coins from "@public/Coins.png";
+import Coins from "@public/coins.png";
 import Watch from "@public/watch.png";
 import CloseIcon from "@/components/icons/CloseIcon";
 import {routes} from "@/utils/routes";
