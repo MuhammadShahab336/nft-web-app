@@ -1,0 +1,52 @@
+import React from 'react'
+import logo from "@public/logo.svg";
+import buttonBg from "@public/button-bg2.svg";
+import Link from "next/link";
+import Image from 'next/image';
+import {routes} from "@/utils/routes";
+
+export const HeaderTopBar = () => {
+    return (
+        <>
+            <div className="bg-header-bar">
+                <div className="container py-2">
+                    <div className="row justify-content-between align-items-center">
+                        <div className="col">
+                            <div className="row gx-2 align-items-center">
+                                <div className="col-auto">
+                                    <h1 className="text-white fw-700 mb-0">
+                                        ALIENZ STUDIO
+                                    </h1>
+                                </div>
+                                <div className="col-auto">
+                                    <div style={{ position: 'relative', width: 100, height: 100 }}>
+                                        <Image
+                                            alt="Logo"
+                                            src={logo}
+                                            fill
+                                            sizes="100vw"
+                                            style={{
+                                                objectFit: "contain",
+                                            }}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-auto">
+                            <Link
+                                href={routes.dashboard}
+                                className="btn bg-transparent border-0 bg-image position-relative s-16 fw-400 text-white text-uppercase py-2 px-4"
+                                style={{ backgroundImage: `url(${buttonBg.src})` }}
+                            >
+                                <span className="my-1 px-1">
+                                    ONBXY2N
+                                </span>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}

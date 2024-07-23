@@ -1,96 +1,19 @@
-import MenuIcon from "@/components/icons/MenuIcon";
+import React from "react";
 import Image from "next/image";
-import avatar from "@public/avatar2.png";
-import logo from "@public/logo.svg";
 import Coins from "@public/coins.png";
 import Watch from "@public/watch.png";
-import CloseIcon from "@/components/icons/CloseIcon";
-import {routes} from "@/utils/routes";
-import buttonBg from "@public/button-bg2.svg";
-import Link from "next/link";
-import React from "react";
+import { HeaderTopBar } from "@/components/HeaderTopBar";
+import Header from "@/components/Header";
+
 
 
 export default function Dashboard() {
     return (
         <>
             <div className="w-100 min-h-full bg-dark">
-                <div className="bg-header-bar">
-                    <div className="container py-2">
-                        <div className="row justify-content-between align-items-center">
-                            <div className="col">
-                                <div className="row gx-2 align-items-center">
-                                    <div className="col-auto">
-                                        <h1 className="text-white fw-700 mb-0">
-                                            ALIENZ STUDIO
-                                        </h1>
-                                    </div>
-                                    <div className="col-auto">
-                                        <div style={{position: 'relative', width: 100, height: 100}}>
-                                            <Image
-                                                alt="Logo"
-                                                src={logo}
-                                                fill
-                                                sizes="100vw"
-                                                style={{
-                                                    objectFit: "contain",
-                                                }}
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-auto">
-                                <Link
-                                    href={routes.dashboard}
-                                    className="btn bg-transparent border-0 bg-image position-relative s-16 fw-400 text-white text-uppercase py-2 px-4"
-                                    style={{backgroundImage: `url(${buttonBg.src})`}}
-                                >
-                                    <span className="my-1 px-1">
-                                        ONBXY2N
-                                    </span>
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <HeaderTopBar />
+                <Header title="Dashboard" />
 
-                <div className="container">
-                    <div className="row justify-content-between align-items-center">
-                        <div className="col-auto">
-                            <MenuIcon/>
-                        </div>
-                        <div className="col-auto">
-                            <h1 className="text-white fw-700 text-uppercase mb-0">Dashboard</h1>
-                        </div>
-                        <div className="col-auto position-relative">
-                            <div className="row g-4 align-items-center justify-content-between">
-                                <div className="col-auto">
-                                    <div style={{position: 'relative', width: 80, height: 80}}>
-                                        <Image
-                                            alt="Avatar"
-                                            src={avatar}
-                                            fill
-                                            sizes="100vw"
-                                            style={{
-                                                objectFit: "contain",
-                                            }}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="col-auto">
-                                    <CloseIcon
-                                        style={{
-                                            width: 30,
-                                            height: 30,
-                                            position: 'absolute',
-                                        }}
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <div className="container mt-5">
                     <h2 className="fw-500 text-center text-white mb-5">
@@ -199,7 +122,7 @@ export default function Dashboard() {
                                         right: -100,
                                     }}
                                 >
-                                    <div style={{position: 'relative', width: 200, height: 200}}>
+                                    <div style={{ position: 'relative', width: 200, height: 200 }}>
                                         <Image
                                             alt="Coins"
                                             src={Coins}
@@ -239,7 +162,7 @@ export default function Dashboard() {
                                         right: -60,
                                     }}
                                 >
-                                    <div style={{position: 'relative', width: 220, height: 200}}>
+                                    <div style={{ position: 'relative', width: 220, height: 200 }}>
                                         <Image
                                             alt="Watch"
                                             src={Watch}

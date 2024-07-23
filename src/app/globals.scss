@@ -5,6 +5,7 @@ $success: #ADFF00;
 $secondary: #00C2FF;
 $warning: #FF8A00;
 $grey: #BCBCBC26;
+$grey-dark: #BCBCBC40;
 $header-bar: #161515;
 
 @font-face {
@@ -13,34 +14,46 @@ $header-bar: #161515;
     font-weight: 300;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'GothicLight';
+    src: url('/font/GothicDemiLight.ttf');
+    font-style: normal;
+}
+
 @font-face {
     font-family: 'Regular';
     src: url('/font/regular2.otf');
     font-weight: 400;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Regular2';
     src: url('/font/regular3.otf');
     font-weight: 500;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'GothicRegular';
     src: url('/font/GothicDemiRegular.ttf');
     font-style: normal;
 }
+
 @font-face {
     font-family: 'LightBoxSemibold';
     src: url('/font/lightbox-semibold-1.otf');
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Bold';
     src: url('/font/bold.otf');
     font-weight: 700;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Bold2';
     src: url('/font/bold2.otf');
@@ -57,35 +70,52 @@ body {
 .bg-grey {
     background-color: $grey;
 }
+
+.bg-grey-dark {
+    background-color: $grey-dark;
+}
+
 .bg-header-bar {
     background-color: $header-bar;
 }
+
 .bg-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
 }
-.bg-image-fixed{
+
+.bg-overlay2 {
+    background-color: #BCBCBC40;
+}
+
+.bg-image-fixed {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-attachment: fixed;
 }
+
 .bg-image {
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top right;
 }
+
 .w-full {
     width: 100%;
 }
+
 .h-full {
     height: 100dvh;
 }
+
 .min-h-full {
     min-height: 100dvh;
 }
+
 .on-hover-zoom {
     transition: all ease-in-out 0.3s;
 }
+
 .on-hover-zoom:hover {
     transform: scale(1.05);
     transition: all ease-in-out 0.3s;
@@ -95,12 +125,19 @@ body {
 .s-36 {
     font-size: 2.25rem;
 }
+
 .s-62 {
     font-size: 3.875rem;
 }
+
+.s-56 {
+    font-size: 3.5rem;
+}
+
 .s-20 {
     font-size: 1.25rem;
 }
+
 .s-16 {
     font-size: 1rem;
 }
@@ -110,33 +147,45 @@ body {
     font-family: 'Light', sans-serif;
     letter-spacing: 3.72px;
 }
+
+.fw-300-gothic {
+    font-family: 'GothicLight', sans-serif;
+    letter-spacing: 3.72px;
+}
+
 .fw-400 {
     font-family: 'Regular', sans-serif;
     letter-spacing: 3.72px;
 }
+
 .fw-400-gothic {
     font-family: 'GothicRegular', sans-serif;
     letter-spacing: 3.72px;
     font-weight: 400;
 }
+
 .fw-900-gothic {
     font-family: 'GothicRegular', sans-serif;
     letter-spacing: 3.72px;
     font-weight: 900;
 }
+
 .fw-500 {
     font-family: 'Regular2', sans-serif;
     letter-spacing: 3.72px;
 }
+
 .fw-600 {
     font-family: 'LightBoxSemibold', sans-serif;
     letter-spacing: 3.72px;
     font-weight: 600;
 }
+
 .fw-700 {
     font-family: 'Bold', sans-serif;
     letter-spacing: 8.72px;
 }
+
 .fw-900 {
     font-family: 'Bold2', sans-serif;
     // letter-spacing: 8.72px;
