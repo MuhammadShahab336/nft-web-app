@@ -7,6 +7,7 @@ $warning: #FF8A00;
 $grey: #BCBCBC26;
 $grey-dark: #BCBCBC40;
 $header-bar: #161515;
+$pink: #d87da4;
 
 @font-face {
     font-family: 'Light';
@@ -63,8 +64,10 @@ $header-bar: #161515;
 
 @import '~bootstrap/scss/bootstrap';
 
+html,
 body {
     overflow-x: hidden;
+    font-size: 14px !important;
 }
 
 .bg-grey {
@@ -87,6 +90,10 @@ body {
     background-color: #BCBCBC40;
 }
 
+.bg-pink {
+    background-color: $pink;
+}
+
 .bg-image-fixed {
     background-size: cover;
     background-repeat: no-repeat;
@@ -98,6 +105,10 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: top right;
+}
+
+.border-grey {
+    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .w-full {
@@ -138,8 +149,20 @@ body {
     font-size: 1.25rem;
 }
 
+.s-21 {
+    font-size: 1.4rem;
+}
+
 .s-16 {
     font-size: 1rem;
+}
+
+.s-10 {
+    font-size: 0.625rem;
+}
+
+.s-13 {
+    font-size: 0.8rem;
 }
 
 // font weight
@@ -205,4 +228,49 @@ body {
     border: 1px solid transparent;
     background: linear-gradient($dark, $dark) padding-box, linear-gradient(180deg, #ADFF00 0%, rgba(104, 153, 0, 0) 100%) border-box;
     border-radius: 15px;
+}
+
+
+
+.gradient-box {
+    position: relative;
+    /* Make sure to adjust if needed */
+}
+
+.gradient-box::after,
+.gradient-box::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 2px solid;
+    /* Make border transparent initially */
+    z-index: 1;
+    /* Ensure it doesn't block clicks */
+}
+
+.gradient-box::after {
+    border-image-source: linear-gradient(225.99deg, var(--gredientColor) 15.5%, rgba(196, 2, 2, 0) 37.44%);
+    border-image-slice: 1;
+    transition: all ease-in-out 0.5s;
+}
+
+.gradient-box::before {
+    border-image-source: linear-gradient(40deg, var(--gredientColor) 15.5%, rgba(196, 2, 2, 0) 37.44%);
+    border-image-slice: 1;
+    transition: all ease-in-out 0.5s;
+}
+
+.gradient-box:hover::after {
+    border-image-source: linear-gradient(309deg, var(--gredientColor) 15.5%, rgba(196, 2, 2, 0) 37.44%);
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+.gradient-box:hover::before {
+    border-image-source: linear-gradient(120deg, var(--gredientColor) 15.5%, rgba(196, 2, 2, 0) 37.44%);
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
 }

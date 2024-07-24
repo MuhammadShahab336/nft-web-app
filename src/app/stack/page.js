@@ -5,6 +5,8 @@ import stars from "@public/stars.jpeg"
 import Coins from "@public/note.svg";
 import nftCoins from "@public/nft-coin.svg";
 import nftCoins2 from "@public/nft-coin2.svg";
+import dollars from "@public/dollars.svg";
+import avatar from "@public/avatar.svg";
 
 
 export default function Stack() {
@@ -14,6 +16,110 @@ export default function Stack() {
                 <div className="bg-overlay min-h-full w-100">
                     <HeaderTopBar />
                     <Header title="Stack" />
+
+                    <div className="container mt-5 pt-5">
+                        <div className="row g-5 justify-content-between align-items-center row-col-3">
+                            <div className="col-md px-md-5 align-self-stretch">
+                                <div className="border border-success rounded-20 bg-grey-dark p-4 position-relative h-100">
+                                    <div
+                                        className="position-absolute"
+                                        style={{
+                                            bottom: '45%',
+                                            left: '-60px',
+                                        }}
+                                    >
+                                        <div style={{ position: 'relative', width: 150, height: 150 }}>
+                                            <Image
+                                                alt="avatar"
+                                                src={avatar}
+                                                fill
+                                                sizes="100vw"
+                                                style={{
+                                                    objectFit: "contain",
+                                                }}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="row gx-0 align-items-end h-100">
+                                        <div className="col-12">
+                                            <h1 className="text-white text-center fw-600">
+                                                Claimable Rewards
+                                            </h1>
+                                        </div>
+                                        <div className="col-6">
+                                            <h1 className="text-white fw-600 mb-0">
+                                                AS Token
+                                            </h1>
+                                        </div>
+                                        <div className="col">
+                                            <h1 className="text-primary text-start fw-900-gothic s-62 lh-1 mb-0">
+                                                5,000
+                                            </h1>
+                                        </div>
+                                    </div>
+                                    <div
+                                        className="position-absolute"
+                                        style={{
+                                            bottom: -25,
+                                            right: -85,
+                                        }}
+                                    >
+                                        <div style={{ position: 'relative', width: 170, height: 200 }}>
+                                            <Image
+                                                alt="dollars"
+                                                src={dollars}
+                                                fill
+                                                sizes="100vw"
+                                                style={{
+                                                    objectFit: "contain",
+                                                }}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md px-md-5 align-self-stretch">
+                                <div className="border border-success rounded-20 bg-grey-dark p-4 position-relative h-100">
+                                    <div className="row gx-0 align-items-end h-100">
+                                        <div className="col-12">
+                                            <h1 className="text-white text-center fw-600">
+                                                Current Balance
+                                            </h1>
+                                        </div>
+                                        <div className="col-6">
+                                            <h1 className="text-white fw-600 mb-0">
+                                                AS Token
+                                            </h1>
+                                        </div>
+                                        <div className="col">
+                                            <h1 className="text-primary text-start fw-900-gothic s-62 lh-1 mb-0">
+                                                78,000
+                                            </h1>
+                                        </div>
+                                    </div>
+                                    <div
+                                        className="position-absolute"
+                                        style={{
+                                            bottom: -25,
+                                            right: -85,
+                                        }}
+                                    >
+                                        <div style={{ position: 'relative', width: 170, height: 200 }}>
+                                            <Image
+                                                alt="dollars"
+                                                src={dollars}
+                                                fill
+                                                sizes="100vw"
+                                                style={{
+                                                    objectFit: "contain",
+                                                }}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div className="container mt-5 pt-5">
                         <div className="row g-5 justify-content-between align-items-center row-col-3">
@@ -106,7 +212,7 @@ export default function Stack() {
                         </div>
                     </div>
 
-                    <div className="container mt-5 pt-5">
+                    <div className="container mt-5 pt-5 pb-5">
                         <div className="row g-5 justify-content-between align-items-center row-col-3">
                             <div className="col-md pe-md-5 align-self-stretch">
                                 <div className="border border-success rounded-20 bg-grey-dark p-4 position-relative h-100">
@@ -221,6 +327,132 @@ export default function Stack() {
 
                         </div>
                     </div>
+
+                    <div className="container mt-5 pt-5">
+                        <div className="row g-3 justify-content-between align-items-center row-cols-md-4">
+                            <div className="col-md">
+                                <div className="border border-primary bg-grey-dark p-4 pt-5 rounded-20 position-relative">
+                                    <h4 className="text-white text-center fw-900 s-21 mb-2">
+                                        Staked
+                                        DankDealerz
+                                    </h4>
+                                    <h6 className="text-white text-center fw-800 mb-0">
+                                        ($AS Token)
+                                    </h6>
+
+                                    <div
+                                        className="position-absolute start-0 end-0 d-flex justify-content-center"
+                                        style={{
+                                            bottom: '60%'
+                                        }}
+                                    >
+                                        <div
+                                            className="d-flex align-items-center p-2 justify-content-center text-center bg-success fw-400-gothic h4 rounded-circle lh-1"
+                                            style={{
+                                                width: 90,
+                                                height: 90,
+                                            }}
+                                        >
+                                            Tier
+                                            1
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div className="col-md">
+                                <div className="border border-primary bg-grey-dark p-4 pt-5 rounded-20 position-relative">
+                                    <h4 className="text-white text-center fw-900 s-21 mb-2">
+                                        Staked
+                                        DankDealerz 1:1
+                                    </h4>
+                                    <h6 className="text-white text-center fw-800 mb-0">
+                                        ($AS Token)
+                                    </h6>
+
+                                    <div
+                                        className="position-absolute start-0 end-0 d-flex justify-content-center"
+                                        style={{
+                                            bottom: '60%'
+                                        }}
+                                    >
+                                        <div
+                                            className="d-flex align-items-center p-2 justify-content-center text-center bg-success fw-400-gothic h4 rounded-circle lh-1"
+                                            style={{
+                                                width: 90,
+                                                height: 90,
+                                            }}
+                                        >
+                                            Tier
+                                            2
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div className="col-md">
+                                <div className="border border-primary bg-grey-dark p-4 pt-5 rounded-20 position-relative">
+                                    <h4 className="text-white text-center fw-900 s-21 mb-2">
+                                        Mutant Staking
+                                    </h4>
+                                    <h6 className="text-white text-center fw-800 mb-0">
+                                        Coming Soon!
+                                    </h6>
+
+                                    <div
+                                        className="position-absolute start-0 end-0 d-flex justify-content-center"
+                                        style={{
+                                            bottom: '60%'
+                                        }}
+                                    >
+                                        <div
+                                            className="d-flex align-items-center p-2 justify-content-center text-center bg-success fw-400-gothic h4 rounded-circle lh-1"
+                                            style={{
+                                                width: 90,
+                                                height: 90,
+                                            }}
+                                        >
+                                            Tier
+                                            3
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div className="col-md">
+                                <div className="border border-primary bg-grey-dark p-4 pt-5 rounded-20 position-relative">
+                                    <h4 className="text-white text-center fw-900 s-21 mb-2">
+                                        Trait Staking
+                                    </h4>
+                                    <h6 className="text-white text-center fw-800 mb-0">
+                                        Coming Soon!
+                                    </h6>
+
+                                    <div
+                                        className="position-absolute start-0 end-0 d-flex justify-content-center"
+                                        style={{
+                                            bottom: '60%'
+                                        }}
+                                    >
+                                        <div
+                                            className="d-flex align-items-center p-2 justify-content-center text-center bg-success fw-400-gothic h4 rounded-circle lh-1"
+                                            style={{
+                                                width: 90,
+                                                height: 90,
+                                            }}
+                                        >
+                                            Tier
+                                            4
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
 
 
                     <div className="container mt-5 pt-5 pb-5">
