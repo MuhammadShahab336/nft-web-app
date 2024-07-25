@@ -17,7 +17,7 @@ export default function Mint() {
                     <Header title="Mint" />
 
                     <div className="container mt-5">
-                        <div className="row g-5 row-cols-3">
+                        <div className="row g-5 row-cols-lg-3">
                             <div className="col">
                                 <h1 className="text-white text-center fw-900 mb-4">
                                     Dank Dealerz
@@ -86,13 +86,13 @@ export default function Mint() {
                         <div className="row g-4 row-col-3">
                             <div className="col">
                                 <div className="gradient-card1 p-4 text-center">
-                                    <h3 className="text-primary fw-400-gothic">
+                                    <h3 className="text-primary fw-400-gothic-without-ls">
                                         Disclaimer:
                                     </h3>
-                                    <p className="text-white fw-300-gothic s-20 mb-0">
+                                    <p className="text-white fw-300-gothic-without-ls s-19 mb-0">
                                         DankDealerz 2:1 burn to claim ; Mutant pass 3:1 burn to claim meaning a holder must hold a minimum of 2 Danks to receive 1 mint ; a holder must hold a minimum of 3 (silver, gold and platinum) passes to receive 1 mint ; mints will be on a first come first serve after initial burn to claims have been completed in the applicable time period allowed to exchange before releasing to public.
                                         &nbsp;
-                                        <span className="text-primary fw-400-gothic">
+                                        <span className="text-primary fw-400-gothic-without-ls">
                                             1 Mutant pass will grant that holder 1 mutant mint.
                                         </span>
                                     </p>
@@ -107,12 +107,12 @@ export default function Mint() {
                                 <div className="gradient-card1 p-4 position-relative">
                                     <div className="row flex-column align-items-center">
                                         <div className="col-auto">
-                                            <h4 className="text-white fw-600 mb-0">
+                                            <h4 className="text-white fw-600-without-ls mb-0">
                                                 Minted Total
                                             </h4>
                                         </div>
                                         <div className="col-auto">
-                                            <h1 className="text-primary fw-900-gothic s-56 mb-0 ">
+                                            <h1 className="text-primary fw-900-gothic-without-ls s-56 mb-0 ">
                                                 45/8888
                                             </h1>
                                         </div>

@@ -18,17 +18,17 @@ export default function Stack() {
                     <Header title="Stack" />
 
                     <div className="container mt-5 pt-5">
-                        <div className="row g-5 justify-content-between align-items-center row-col-3">
-                            <div className="col-md px-md-5 align-self-stretch">
+                        <div className="row g-5 justify-content-between align-items-center row-cols-lg-2 row-cols-1">
+                            <div className="col ps-lg-5 align-self-stretch">
                                 <div className="border border-success rounded-20 bg-grey-dark p-4 position-relative h-100">
                                     <div
                                         className="position-absolute"
                                         style={{
                                             bottom: '45%',
-                                            left: '-60px',
+                                            left: '-35px',
                                         }}
                                     >
-                                        <div style={{ position: 'relative', width: 150, height: 150 }}>
+                                        <div style={{ position: 'relative', width: 160, height: 160 }}>
                                             <Image
                                                 alt="avatar"
                                                 src={avatar}
@@ -42,17 +42,17 @@ export default function Stack() {
                                     </div>
                                     <div className="row gx-0 align-items-end h-100">
                                         <div className="col-12">
-                                            <h1 className="text-white text-center fw-600">
+                                            <h1 className="text-white text-lg-end text-md-center fw-600-without-ls s-38 me-lg-4">
                                                 Claimable Rewards
                                             </h1>
                                         </div>
                                         <div className="col-6">
-                                            <h1 className="text-white fw-600 mb-0">
+                                            <h1 className="text-white fw-600-without-ls mb-0 s-38">
                                                 AS Token
                                             </h1>
                                         </div>
                                         <div className="col">
-                                            <h1 className="text-primary text-start fw-900-gothic s-62 lh-1 mb-0">
+                                            <h1 className="text-primary text-start fw-900-gothic-without-ls s-62 lh-1 mb-0">
                                                 5,000
                                             </h1>
                                         </div>
@@ -60,8 +60,8 @@ export default function Stack() {
                                     <div
                                         className="position-absolute"
                                         style={{
-                                            bottom: -25,
-                                            right: -85,
+                                            bottom: -35,
+                                            right: -70,
                                         }}
                                     >
                                         <div style={{ position: 'relative', width: 170, height: 200 }}>
@@ -78,21 +78,21 @@ export default function Stack() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md px-md-5 align-self-stretch">
+                            <div className="col pe-lg-5 align-self-stretch">
                                 <div className="border border-success rounded-20 bg-grey-dark p-4 position-relative h-100">
                                     <div className="row gx-0 align-items-end h-100">
                                         <div className="col-12">
-                                            <h1 className="text-white text-center fw-600">
+                                            <h1 className="text-white text-center fw-600-without-ls s-38">
                                                 Current Balance
                                             </h1>
                                         </div>
                                         <div className="col-6">
-                                            <h1 className="text-white fw-600 mb-0">
+                                            <h1 className="text-white fw-600-without-ls mb-0 s-38">
                                                 AS Token
                                             </h1>
                                         </div>
                                         <div className="col">
-                                            <h1 className="text-primary text-start fw-900-gothic s-62 lh-1 mb-0">
+                                            <h1 className="text-primary text-start fw-900-gothic-without-ls s-62 lh-1 mb-0">
                                                 78,000
                                             </h1>
                                         </div>
@@ -100,8 +100,8 @@ export default function Stack() {
                                     <div
                                         className="position-absolute"
                                         style={{
-                                            bottom: -25,
-                                            right: -85,
+                                            bottom: -35,
+                                            right: -70,
                                         }}
                                     >
                                         <div style={{ position: 'relative', width: 170, height: 200 }}>
@@ -122,8 +122,8 @@ export default function Stack() {
                     </div>
 
                     <div className="container mt-5 pt-5">
-                        <div className="row g-5 justify-content-between align-items-center row-col-3">
-                            <div className="col-md px-md-5 align-self-stretch">
+                        <div className="row g-5 justify-content-between align-items-center row-cols-lg-2 row-cols-1">
+                            <div className="col px-md-5 align-self-stretch">
                                 <div className="border border-primary rounded-20 bg-grey-dark p-4 position-relative h-100">
                                     <div className="row gx-2 align-items-center h-100">
                                         <div className="col-4">
@@ -136,10 +136,10 @@ export default function Stack() {
                                             <div class="vr bg-white " style={{ opacity: 0.8 }} />
                                         </div>
                                         <div className="col text-center">
-                                            <h2 className="text-success fw-400-gothic mb-0 lh-1">
+                                            <h2 className="text-success fw-400-gothic-without-ls mb-0 lh-1">
                                                 10 $AS Token
                                             </h2>
-                                            <p className="text-white fw-400-gothic mb-0">
+                                            <p className="text-white fw-400-gothic-without-ls mb-0">
                                                 per NFT staked
                                             </p>
                                         </div>
@@ -166,7 +166,7 @@ export default function Stack() {
                                 </div>
                             </div>
 
-                            <div className="col-md px-md-5 align-self-stretch">
+                            <div className="col px-md-5 align-self-stretch">
                                 <div className="border border-primary rounded-20 bg-grey-dark p-4 position-relative h-100">
                                     <div className="row gx-2 align-items-center h-100">
                                         <div className="col-4">
@@ -179,10 +179,10 @@ export default function Stack() {
                                             <div class="vr bg-white " style={{ opacity: 0.8 }} />
                                         </div>
                                         <div className="col text-center">
-                                            <h2 className="text-success fw-400-gothic mb-0 lh-1">
+                                            <h2 className="text-success fw-400-gothic-without-ls mb-0 lh-1">
                                                 10 $AS Token
                                             </h2>
-                                            <p className="text-white fw-400-gothic mb-0">
+                                            <p className="text-white fw-400-gothic-without-ls mb-0">
                                                 per NFT staked
                                             </p>
                                         </div>
@@ -213,18 +213,18 @@ export default function Stack() {
                     </div>
 
                     <div className="container mt-5 pt-5 pb-5">
-                        <div className="row g-5 justify-content-between align-items-center row-col-3">
-                            <div className="col-md pe-md-5 align-self-stretch">
+                        <div className="row g-5 justify-content-between align-items-center row-cols-lg-3">
+                            <div className="col pe-md-5 align-self-stretch">
                                 <div className="border border-success rounded-20 bg-grey-dark p-4 position-relative h-100">
                                     <div className="row gx-5 align-items-center h-100">
                                         <div className="col-6">
-                                            <h4 className="text-white fw-600 mb-0">
+                                            <h3 className="text-white fw-600-without-ls mb-0">
                                                 Staked
                                                 Amount
-                                            </h4>
+                                            </h3>
                                         </div>
                                         <div className="col-auto">
-                                            <h1 className="text-primary fw-900-gothic s-62 mb-0">
+                                            <h1 className="text-primary fw-900-gothic-without-ls s-62 mb-0">
                                                 35
                                             </h1>
                                         </div>
@@ -251,17 +251,17 @@ export default function Stack() {
                                 </div>
                             </div>
 
-                            <div className="col-md pe-md-5 align-self-stretch">
+                            <div className="col pe-md-5 align-self-stretch">
                                 <div className="border border-success rounded-20 bg-grey-dark p-4 position-relative h-100">
                                     <div className="row gx-5 align-items-center h-100">
                                         <div className="col-6">
-                                            <h3 className="text-white fw-600 mb-0">
+                                            <h3 className="text-white fw-600-without-ls mb-0">
                                                 Un Staked
                                                 Amount
                                             </h3>
                                         </div>
                                         <div className="col-auto">
-                                            <h1 className="text-primary fw-900-gothic s-62 mb-0">
+                                            <h1 className="text-primary fw-900-gothic-without-ls s-62 mb-0">
                                                 15
                                             </h1>
                                         </div>
@@ -288,17 +288,17 @@ export default function Stack() {
                                 </div>
                             </div>
 
-                            <div className="col-md align-self-stretch">
-                                <div className="border border-success rounded-20 bg-grey-dark p-4 position-relative h-100">
+                            <div className="col align-self-stretch">
+                                <div className="border border-success rounded-20 bg-grey-dark p-4 position-relative h-100 d-flex flex-column justify-content-end">
                                     <div className="row gx-5 align-items-center h-100">
                                         <div className="col-6">
-                                            <h4 className="text-white fw-600 mb-0">
+                                            <h3 className="text-white fw-600-without-ls mb-0">
                                                 Awarded
                                                 $AS Tokens
-                                            </h4>
+                                            </h3>
                                         </div>
                                         <div className="col-auto">
-                                            <h1 className="text-primary fw-900-gothic s-62 mb-0">
+                                            <h1 className="text-primary fw-900-gothic-without-ls s-62 mb-0">
                                                 00
                                             </h1>
                                         </div>
@@ -329,9 +329,9 @@ export default function Stack() {
                     </div>
 
                     <div className="container mt-5 pt-5">
-                        <div className="row g-3 justify-content-between align-items-center row-cols-md-4">
-                            <div className="col-md">
-                                <div className="border border-primary bg-grey-dark p-4 pt-5 rounded-20 position-relative">
+                        <div className="row g-3 justify-content-between align-items-center row-cols-lg-4">
+                            <div className="col-md align-self-stretch mt-5">
+                                <div className="border border-primary bg-grey-dark p-4 pt-5 rounded-20 position-relative h-100 d-flex flex-column justify-content-end">
                                     <h4 className="text-white text-center fw-900 s-21 mb-2">
                                         Staked
                                         DankDealerz
@@ -343,7 +343,7 @@ export default function Stack() {
                                     <div
                                         className="position-absolute start-0 end-0 d-flex justify-content-center"
                                         style={{
-                                            bottom: '60%'
+                                            bottom: '68%'
                                         }}
                                     >
                                         <div
@@ -360,8 +360,8 @@ export default function Stack() {
 
                                 </div>
                             </div>
-                            <div className="col-md">
-                                <div className="border border-primary bg-grey-dark p-4 pt-5 rounded-20 position-relative">
+                            <div className="col-md align-self-stretch mt-5">
+                                <div className="border border-primary bg-grey-dark p-4 pt-5 rounded-20 position-relative h-100 d-flex flex-column justify-content-end">
                                     <h4 className="text-white text-center fw-900 s-21 mb-2">
                                         Staked
                                         DankDealerz 1:1
@@ -373,7 +373,7 @@ export default function Stack() {
                                     <div
                                         className="position-absolute start-0 end-0 d-flex justify-content-center"
                                         style={{
-                                            bottom: '60%'
+                                            bottom: '68%'
                                         }}
                                     >
                                         <div
@@ -390,8 +390,8 @@ export default function Stack() {
 
                                 </div>
                             </div>
-                            <div className="col-md">
-                                <div className="border border-primary bg-grey-dark p-4 pt-5 rounded-20 position-relative">
+                            <div className="col-md align-self-stretch mt-5">
+                                <div className="border border-primary bg-grey-dark p-4 pt-5 rounded-20 position-relative h-100 d-flex flex-column justify-content-end">
                                     <h4 className="text-white text-center fw-900 s-21 mb-2">
                                         Mutant Staking
                                     </h4>
@@ -402,7 +402,7 @@ export default function Stack() {
                                     <div
                                         className="position-absolute start-0 end-0 d-flex justify-content-center"
                                         style={{
-                                            bottom: '60%'
+                                            bottom: '68%'
                                         }}
                                     >
                                         <div
@@ -419,8 +419,8 @@ export default function Stack() {
 
                                 </div>
                             </div>
-                            <div className="col-md">
-                                <div className="border border-primary bg-grey-dark p-4 pt-5 rounded-20 position-relative">
+                            <div className="col-md align-self-stretch mt-5">
+                                <div className="border border-primary bg-grey-dark p-4 pt-5 rounded-20 position-relative h-100 d-flex flex-column justify-content-end">
                                     <h4 className="text-white text-center fw-900 s-21 mb-2">
                                         Trait Staking
                                     </h4>
@@ -431,7 +431,7 @@ export default function Stack() {
                                     <div
                                         className="position-absolute start-0 end-0 d-flex justify-content-center"
                                         style={{
-                                            bottom: '60%'
+                                            bottom: '68%'
                                         }}
                                     >
                                         <div

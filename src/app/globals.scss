@@ -67,7 +67,7 @@ $pink: #d87da4;
 html,
 body {
     overflow-x: hidden;
-    font-size: 14px !important;
+    // font-size: 14px !important;
 }
 
 .bg-grey {
@@ -137,12 +137,24 @@ body {
     font-size: 2.25rem;
 }
 
+.s-38 {
+    font-size: 2.375rem;
+}
+
 .s-62 {
-    font-size: 3.875rem;
+    font-size: 3.75rem;
 }
 
 .s-56 {
-    font-size: 3.5rem;
+    font-size: 3.375rem;
+}
+
+.s-28 {
+    font-size: 1.75rem;
+}
+
+.s-19 {
+    font-size: 1.188rem;
 }
 
 .s-20 {
@@ -176,9 +188,17 @@ body {
     letter-spacing: 3.72px;
 }
 
+.fw-300-gothic-without-ls {
+    font-family: 'GothicLight', sans-serif;
+}
+
 .fw-400 {
     font-family: 'Regular', sans-serif;
     letter-spacing: 3.72px;
+}
+
+.fw-400-without-ls {
+    font-family: 'Regular', sans-serif;
 }
 
 .fw-400-gothic {
@@ -187,9 +207,19 @@ body {
     font-weight: 400;
 }
 
+.fw-400-gothic-without-ls {
+    font-family: 'GothicRegular', sans-serif;
+    font-weight: 400;
+}
+
 .fw-900-gothic {
     font-family: 'GothicRegular', sans-serif;
     letter-spacing: 3.72px;
+    font-weight: 900;
+}
+
+.fw-900-gothic-without-ls {
+    font-family: 'GothicRegular', sans-serif;
     font-weight: 900;
 }
 
@@ -204,9 +234,18 @@ body {
     font-weight: 600;
 }
 
+.fw-600-without-ls {
+    font-family: 'LightBoxSemibold', sans-serif;
+    font-weight: 600;
+}
+
 .fw-700 {
     font-family: 'Bold', sans-serif;
     letter-spacing: 8.72px;
+}
+
+.fw-700-without-ls {
+    font-family: 'Bold', sans-serif;
 }
 
 .fw-900 {

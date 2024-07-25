@@ -16,13 +16,13 @@ export default function Dashboard() {
 
 
                 <div className="container mt-5">
-                    <h2 className="fw-500 text-center text-white mb-5">
+                    <h2 className="fw-500 text-center text-white s-36 mb-5">
                         NFT amount held in wallet
                     </h2>
-                    <div className="row gx-0 gy-3 justify-content-between align-items-center row-cols-md-3">
-                        <div className="col-md-3">
+                    <div className="row g-4 justify-content-lg-between justify-content-md-center align-items-center row-cols-md-3">
+                        <div className="col-lg-4 col-md-6">
                             <div className="border border-success bg-grey p-4 pb-5 rounded-20 position-relative">
-                                <h1 className="text-primary text-center fw-900 mb-4">
+                                <h1 className="text-primary text-center fw-900 s-38 mb-4">
                                     Dank Dealerz
                                 </h1>
 
@@ -35,8 +35,8 @@ export default function Dashboard() {
                                     <div
                                         className="d-flex align-items-center justify-content-center bg-success fw-400 h1 rounded-circle"
                                         style={{
-                                            width: 120,
-                                            height: 120,
+                                            width: 105,
+                                            height: 105,
                                         }}
                                     >
                                         12
@@ -45,9 +45,9 @@ export default function Dashboard() {
 
                             </div>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-lg-4 col-md-6">
                             <div className="border border-success bg-grey p-4 pb-5 rounded-20 position-relative">
-                                <h1 className="text-secondary text-center fw-900 mb-4">
+                                <h1 className="text-secondary text-center fw-900 s-38 mb-4">
                                     Mutant Pass
                                 </h1>
 
@@ -60,8 +60,8 @@ export default function Dashboard() {
                                     <div
                                         className="d-flex align-items-center justify-content-center bg-success fw-400 h1 rounded-circle"
                                         style={{
-                                            width: 120,
-                                            height: 120,
+                                            width: 105,
+                                            height: 105,
                                         }}
                                     >
                                         12
@@ -70,9 +70,9 @@ export default function Dashboard() {
 
                             </div>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-lg-4 col-md-6">
                             <div className="border border-success bg-grey p-4 pb-5 rounded-20 position-relative">
-                                <h1 className="text-warning text-center fw-900 mb-4">
+                                <h1 className="text-warning text-center fw-900 s-38 mb-4">
                                     Mutantz
                                 </h1>
 
@@ -85,8 +85,8 @@ export default function Dashboard() {
                                     <div
                                         className="d-flex align-items-center justify-content-center bg-success fw-400 h1 rounded-circle"
                                         style={{
-                                            width: 120,
-                                            height: 120,
+                                            width: 105,
+                                            height: 105,
                                         }}
                                     >
                                         12
@@ -99,18 +99,18 @@ export default function Dashboard() {
                 </div>
 
                 <div className="container mt-5 pt-5">
-                    <div className="row g-5 justify-content-between align-items-center row-col-3">
-                        <div className="col-md pe-md-5 align-self-stretch">
+                    <div className="row g-4 justify-content-between align-items-center row-col-3">
+                        <div className="col-lg pe-lg-5 align-self-stretch">
                             <div className="border border-success rounded-20 p-4 position-relative h-100">
                                 <div className="row gx-5 align-items-center h-100">
-                                    <div className="col-4">
-                                        <h4 className="text-white fw-600 mb-0">
+                                    <div className="col">
+                                        <h4 className="text-white fw-600 s-28 mb-0">
                                             AS Reward
                                             Token
                                         </h4>
                                     </div>
-                                    <div className="col-auto">
-                                        <h1 className="text-primary fw-900-gothic s-62 mb-0">
+                                    <div className="col-7">
+                                        <h1 className="text-primary fw-900-gothic-without-ls s-62 mb-0">
                                             175,000
                                         </h1>
                                     </div>
@@ -136,16 +136,16 @@ export default function Dashboard() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md ps-md-5">
-                            <div className="border border-success rounded-20 p-4 position-relative">
-                                <div className="row flex-column">
+                        <div className="col-lg ps-lg-5 align-self-stretch">
+                            <div className="border border-success rounded-20 p-4 position-relative h-100">
+                                <div className="row g-0 flex-column">
                                     <div className="col">
-                                        <h4 className="text-white fw-600 mb-0 lh-1">
+                                        <h4 className="text-white fw-600 mb-0 s-28 lh-1">
                                             Timer
                                         </h4>
                                     </div>
                                     <div className="col">
-                                        <h1 className="text-primary fw-900-gothic s-62 mb-0 lh-1">
+                                        <h1 className="text-primary fw-900-gothic-without-ls s-62 mb-0 lh-1">
                                             00:00:00
                                         </h1>
                                     </div>
@@ -190,7 +190,7 @@ export default function Dashboard() {
                                         </h4>
                                     </div>
                                     <div className="col-auto">
-                                        <h3 className="text-white fw-400-gothic mb-0">
+                                        <h3 className="text-white fw-400-gothic-without-ls mb-0">
                                             $420
                                         </h3>
                                     </div>
@@ -206,7 +206,7 @@ export default function Dashboard() {
                                         </h4>
                                     </div>
                                     <div className="col-auto">
-                                        <h3 className="text-white fw-400-gothic mb-0">
+                                        <h3 className="text-white fw-400-gothic-without-ls mb-0">
                                             $2
                                         </h3>
                                     </div>
@@ -222,7 +222,7 @@ export default function Dashboard() {
                                         </h4>
                                     </div>
                                     <div className="col-auto">
-                                        <h3 className="text-white fw-400-gothic mb-0">
+                                        <h3 className="text-white fw-400-gothic-without-ls mb-0">
                                             $89/420
                                         </h3>
                                     </div>
@@ -235,7 +235,7 @@ export default function Dashboard() {
                 <div className="container mt-4 pb-4">
                     <div className="row g-0 justify-content-center">
                         <div className="col-md-10 text-center">
-                            <a className="fw-400-gothic text-white s-20 text-decoration-none">
+                            <a className="fw-400-gothic-without-ls text-white s-20 text-decoration-none">
                                 <span className="text-primary">Disclaimer:</span> Quarterly USDT airdrop is based on a
                                 percentage of royalties calculated at $420 every 3 months for the next 3 years. Subject
                                 to
