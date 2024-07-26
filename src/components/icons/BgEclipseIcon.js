@@ -12,7 +12,7 @@ const BgEclipseIcon = (props) => {
                 {...props}
             >
                 <g filter="url(#filter0_f_2_13)">
-                    <circle cx={1353} cy={142} r={503} fill="#BB13FE"/>
+                    <circle cx={1353} cy={142} r={503} fill="#BB13FE" />
                 </g>
                 <defs>
                     <filter
@@ -24,14 +24,14 @@ const BgEclipseIcon = (props) => {
                         filterUnits="userSpaceOnUse"
                         colorInterpolationFilters="sRGB"
                     >
-                        <feFlood floodOpacity={0} result="BackgroundImageFix"/>
+                        <feFlood floodOpacity={0} result="BackgroundImageFix" />
                         <feBlend
                             mode="normal"
                             in="SourceGraphic"
                             in2="BackgroundImageFix"
                             result="shape"
                         />
-                        <feGaussianBlur stdDeviation={425} result="effect1_foregroundBlur_2_13"/>
+                        <feGaussianBlur stdDeviation={425} result="effect1_foregroundBlur_2_13" />
                     </filter>
                 </defs>
             </svg>

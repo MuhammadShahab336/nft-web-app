@@ -10,15 +10,28 @@ const Header = (props) => {
     return (
         <>
             <div className="container">
-                <div className="row justify-content-between align-items-center">
+                <div className="row g-0 justify-content-between align-items-center py-4 position-relative">
                     <div className="col-auto">
-                        <MenuIcon />
+                        <MenuIcon
+                            style={{
+                                with: 60
+                            }}
+                        />
                     </div>
                     <div className="col-auto">
                         <h1 className="text-white fw-700 text-uppercase mb-0">{props.title}</h1>
                     </div>
-                    <div className="col-auto position-relative">
-                        <div className="row g-4 align-items-center justify-content-between">
+                    <div className="col-auto">
+                        <div className="invisible">
+                            <MenuIcon
+                                style={{
+                                    with: 60
+                                }}
+                            />
+                        </div>
+                    </div>
+                    <div className="position-absolute w-auto end-0">
+                        <div className="row gx-3 align-items-center justify-content-between">
                             <div className="col-auto">
                                 <div style={{ position: 'relative', width: 80, height: 80 }}>
                                     <Image
@@ -37,12 +50,12 @@ const Header = (props) => {
                                     style={{
                                         width: 30,
                                         height: 30,
-                                        position: 'absolute',
                                     }}
                                 />
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </>
