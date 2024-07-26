@@ -83,7 +83,7 @@ body {
 }
 
 .bg-overlay {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .bg-overlay2 {
@@ -312,4 +312,9 @@ body {
     border-image-source: linear-gradient(120deg, var(--gredientColor) 15.5%, rgba(196, 2, 2, 0) 37.44%);
     transition: all ease-in-out 0.5s;
     cursor: pointer;
+}
+
+
+.text-no-wrap {
+    white-space: nowrap;
 }

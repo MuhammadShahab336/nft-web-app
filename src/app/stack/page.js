@@ -1,3 +1,4 @@
+'use client'
 import Header from "@/components/Header";
 import { HeaderTopBar } from "@/components/HeaderTopBar";
 import Image from "next/image";
@@ -7,9 +8,12 @@ import nftCoins from "@public/nft-coin.svg";
 import nftCoins2 from "@public/nft-coin2.svg";
 import dollars from "@public/dollars.svg";
 import avatar from "@public/avatar.svg";
+import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 
 export default function Stack() {
+    const { width } = useWindowDimensions()
+    console.log('width', width)
     return (
         <>
             <div className="bg-image-fixed w-100" style={{ backgroundImage: `url(${stars.src})` }}>
@@ -24,11 +28,11 @@ export default function Stack() {
                                     <div
                                         className="position-absolute"
                                         style={{
-                                            bottom: '45%',
-                                            left: '-35px',
+                                            bottom: width > 600 ? '45%' : '78%',
+                                            left: width > 600 ? '-35px' : '-16px',
                                         }}
                                     >
-                                        <div style={{ position: 'relative', width: 160, height: 160 }}>
+                                        <div style={{ position: 'relative', width: width > 600 ? 160 : 100, height: width > 600 ? 160 : 100 }}>
                                             <Image
                                                 alt="avatar"
                                                 src={avatar}
@@ -60,11 +64,11 @@ export default function Stack() {
                                     <div
                                         className="position-absolute"
                                         style={{
-                                            bottom: -35,
-                                            right: -70,
+                                            bottom: width > 600 ? -35 : -32,
+                                            right: width > 600 ? -70 : -53,
                                         }}
                                     >
-                                        <div style={{ position: 'relative', width: 170, height: 200 }}>
+                                        <div style={{ position: 'relative', width: width > 600 ? 170 : 150, height: width > 600 ? 200 : 150 }}>
                                             <Image
                                                 alt="dollars"
                                                 src={dollars}
@@ -100,11 +104,11 @@ export default function Stack() {
                                     <div
                                         className="position-absolute"
                                         style={{
-                                            bottom: -35,
-                                            right: -70,
+                                            bottom: width > 600 ? -35 : -32,
+                                            right: width > 600 ? -70 : -53,
                                         }}
                                     >
-                                        <div style={{ position: 'relative', width: 170, height: 200 }}>
+                                        <div style={{ position: 'relative', width: width > 600 ? 170 : 150, height: width > 600 ? 200 : 150 }}>
                                             <Image
                                                 alt="dollars"
                                                 src={dollars}
@@ -147,11 +151,11 @@ export default function Stack() {
                                     <div
                                         className="position-absolute"
                                         style={{
-                                            bottom: -40,
-                                            right: -80,
+                                            bottom: width > 600 ? -40 : -22,
+                                            right: width > 600 ? -80 : -22,
                                         }}
                                     >
-                                        <div style={{ position: 'relative', width: 150, height: 200 }}>
+                                        <div style={{ position: 'relative', width: width > 600 ? 150 : 100, height: width > 600 ? 200 : 100 }}>
                                             <Image
                                                 alt="Coins"
                                                 src={nftCoins2}
@@ -190,11 +194,11 @@ export default function Stack() {
                                     <div
                                         className="position-absolute"
                                         style={{
-                                            bottom: -40,
-                                            right: -80,
+                                            bottom: width > 600 ? -40 : -22,
+                                            right: width > 600 ? -80 : -22,
                                         }}
                                     >
-                                        <div style={{ position: 'relative', width: 150, height: 200 }}>
+                                        <div style={{ position: 'relative', width: width > 600 ? 150 : 100, height: width > 600 ? 200 : 100 }}>
                                             <Image
                                                 alt="Coins"
                                                 src={nftCoins2}
@@ -232,11 +236,11 @@ export default function Stack() {
                                     <div
                                         className="position-absolute"
                                         style={{
-                                            bottom: -30,
-                                            right: -100,
+                                            bottom: width > 600 ? -30 : -44,
+                                            right: width > 600 ? -100 : -64,
                                         }}
                                     >
-                                        <div style={{ position: 'relative', width: 170, height: 200 }}>
+                                        <div style={{ position: 'relative', width: width > 600 ? 170 : 140, height: width > 600 ? 200 : 140 }}>
                                             <Image
                                                 alt="Coins"
                                                 src={Coins}
@@ -269,11 +273,11 @@ export default function Stack() {
                                     <div
                                         className="position-absolute"
                                         style={{
-                                            bottom: -30,
-                                            right: -100,
+                                            bottom: width > 600 ? -30 : -44,
+                                            right: width > 600 ? -100 : -64,
                                         }}
                                     >
-                                        <div style={{ position: 'relative', width: 170, height: 200 }}>
+                                        <div style={{ position: 'relative', width: width > 600 ? 170 : 140, height: width > 600 ? 200 : 140 }}>
                                             <Image
                                                 alt="Coins"
                                                 src={Coins}
@@ -306,11 +310,11 @@ export default function Stack() {
                                     <div
                                         className="position-absolute"
                                         style={{
-                                            bottom: -30,
-                                            right: -100,
+                                            bottom: width > 600 ? -30 : -40,
+                                            right: width > 600 ? -100 : -41,
                                         }}
                                     >
-                                        <div style={{ position: 'relative', width: 170, height: 200 }}>
+                                        <div style={{ position: 'relative', width: width > 600 ? 170 : 140, height: width > 600 ? 200 : 140 }}>
                                             <Image
                                                 alt="Nft Coins"
                                                 src={nftCoins}
