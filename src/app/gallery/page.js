@@ -20,7 +20,7 @@ export default function Gallery() {
                             Dank Dealerz
                         </h1>
 
-                        <div className="row g-5 row-cols-3">
+                        <div className="row g-5 row-cols-lg-3 row-cols-md-2">
                             <div className="col">
                                 <div className="gradient-box position-relative bg-dark pt-5" style={{ '--gredientColor': 'rgba(255, 0, 0, 0.67)' }}>
                                     <div className="mx-auto" style={{ position: 'relative', width: 260, height: 350 }}>
@@ -76,7 +76,7 @@ export default function Gallery() {
                             Mutant Pass
                         </h1>
 
-                        <div className="row g-5 row-cols-3">
+                        <div className="row g-5 row-cols-lg-3 row-cols-md-2">
                             <div className="col">
                                 <div className="bg-grey pt-5 pb-2 px-4 border-grey rounded-20" style={{ '--gredientColor': 'rgba(255, 0, 0, 0.67)' }}>
                                     <div className="mx-auto rounded-20 mt-3
@@ -119,7 +119,7 @@ export default function Gallery() {
                             Mutantz
                         </h1>
 
-                        <div className="row g-5 row-cols-3">
+                        <div className="row g-5 row-cols-lg-3 row-cols-md-2">
                             <div className="col">
                                 <div className="bg-pink pt-5 pb-2 px-4 border-grey rounded-20" style={{ '--gredientColor': 'rgba(255, 0, 0, 0.67)' }}>
                                     <div className="mx-auto rounded-20 mt-4" style={{ position: 'relative', height: 320 }}>

@@ -318,3 +318,15 @@ body {
 .text-no-wrap {
     white-space: nowrap;
 }
+
+.custom-link a {
+    transition: all ease 0.5s;
+    color: $white;
+    font-size: 2rem;
+}
+
+.custom-link a:hover {
+    transition: all ease 0.5s;
+    color: $primary;
+    scale: 1.1;
+}

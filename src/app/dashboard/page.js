@@ -1,13 +1,16 @@
+'use client'
 import React from "react";
 import Image from "next/image";
 import Coins from "@public/coins.png";
 import Watch from "@public/watch.png";
 import { HeaderTopBar } from "@/components/HeaderTopBar";
 import Header from "@/components/Header";
+import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 
 
 export default function Dashboard() {
+    const { width } = useWindowDimensions()
     return (
         <>
             <div className="w-100 min-h-full bg-dark">
@@ -118,11 +121,11 @@ export default function Dashboard() {
                                 <div
                                     className="position-absolute"
                                     style={{
-                                        bottom: -30,
-                                        right: -100,
+                                        bottom: width > 600 ? -30 : -45,
+                                        right: width > 600 ? -100 : -85,
                                     }}
                                 >
-                                    <div style={{ position: 'relative', width: 200, height: 200 }}>
+                                    <div style={{ position: 'relative', width: width > 600 ? 200 : 175, height: width > 600 ? 200 : 175 }}>
                                         <Image
                                             alt="Coins"
                                             src={Coins}
@@ -158,11 +161,11 @@ export default function Dashboard() {
                                 <div
                                     className="position-absolute"
                                     style={{
-                                        bottom: -25,
-                                        right: -60,
+                                        bottom: width > 600 ? -25 : -5,
+                                        right: width > 600 ? -60 : -58,
                                     }}
                                 >
-                                    <div style={{ position: 'relative', width: 220, height: 200 }}>
+                                    <div style={{ position: 'relative', width: width > 600 ? 220 : 160, height: width > 600 ? 200 : 160 }}>
                                         <Image
                                             alt="Watch"
                                             src={Watch}

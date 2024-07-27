@@ -3,6 +3,10 @@ import { HeaderTopBar } from "@/components/HeaderTopBar"
 import stars from "@public/stars.jpeg"
 import buttonBg from "@public/bg-button4.svg";
 import Link from "next/link";
+import DiscordIcon from "@/components/icons/DiscordIcon";
+import TwitterIcon from "@/components/icons/TwitterIcon";
+import BoatIcon from "@/components/icons/BoatIcon";
+import LineIcon from "@/components/icons/LineIcon";
 
 
 export default function Rewards() {
@@ -219,6 +223,56 @@ export default function Rewards() {
                             </div>
                         </div>
                     </div>
+
+                    <div className="container my-5 pb-4">
+                        <div className="row g-0 justify-content-center">
+                            <div className="col-md-10 text-center">
+                                <p className="fw-400-gothic-without-ls text-primary h3 text-decoration-none">
+                                    Disclaimer:
+                                </p>
+                                <a className="fw-300-gothic-without-ls text-white s-20 text-decoration-none">
+                                    Rewards are calculated based off the amount of NFT’s minted. Each Reward will be given on a first come first serve basis until the collection has minted out.
+                                    <span className="text-primary">
+                                        Bong rewards pictured may not be the exact bong you receive however the bong rewarded will be equivalent in style, design, and value.
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section className="position-relative">
+                        <div className="position-absolute" style={{ top: -10, left: 0 }}>
+                            <LineIcon style={{ width: '100%' }} />
+                        </div>
+                        <div className="container">
+                            <div className="row g-0 gy-3 py-3 align-items-center justify-content-between">
+                                <div className="col">
+                                    <p className="text-white text-capatalize s-19 fw-300-gothic-without-ls m-0">
+                                        AlienzStudio. All Rights Reserved 2023
+                                    </p>
+                                </div>
+                                <div className="col-auto">
+                                    <div className="row gx-3">
+                                        <div className="col-auto">
+                                            <a href="/" className="btn btn-primary rounded-3">
+                                                <DiscordIcon style={{ width: 20, height: 20 }} />
+                                            </a>
+                                        </div>
+                                        <div className="col-auto">
+                                            <a href="/" className="btn btn-primary rounded-3">
+                                                <TwitterIcon style={{ width: 20, height: 20 }} />
+                                            </a>
+                                        </div>
+                                        <div className="col-auto">
+                                            <a href="/" className="btn btn-primary rounded-3">
+                                                <BoatIcon style={{ width: 20, height: 20 }} />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
                 </div>
             </div>
