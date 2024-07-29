@@ -8,8 +8,12 @@ const ConnectButton = () => {
         <>
             <Link
                 href={routes.dashboard}
-                className="btn bg-transparent border-0 bg-image position-relative s-36 fw-400 text-white text-uppercase pb-3 px-5 on-hover-zoom d-inline-flex align-items-start"
-                style={{ backgroundImage: `url(${buttonBg.src})`, top: '-100px', backgroundPosition: 'center' }}
+                className="btn bg-transparent border-0 s-36 fw-400 text-white text-uppercase pb-3 px-5 on-hover-zoom d-inline-flex align-items-start btn-svg1"
+                style={{
+                    '--bg-image': `url(${buttonBg.src})`,
+                    // backgroundImage: `url(${buttonBg.src})`,
+                    // backgroundPosition: 'center'
+                }}
             >
                 <span className="">
                     connect

@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
 import Image from "next/image";
-import Coins from "@public/coins.png";
+import Coins from "@public/coins.svg";
 import Watch from "@public/watch.png";
 import { HeaderTopBar } from "@/components/HeaderTopBar";
 import Header from "@/components/Header";
@@ -36,7 +36,7 @@ export default function Dashboard() {
                                     }}
                                 >
                                     <div
-                                        className="d-flex align-items-center justify-content-center bg-success fw-400 h1 rounded-circle"
+                                        className="d-flex align-items-center justify-content-center bg-success fw-400 h1 rounded-circle custom-shadow-success"
                                         style={{
                                             width: 105,
                                             height: 105,
@@ -61,7 +61,7 @@ export default function Dashboard() {
                                     }}
                                 >
                                     <div
-                                        className="d-flex align-items-center justify-content-center bg-success fw-400 h1 rounded-circle"
+                                        className="d-flex align-items-center justify-content-center bg-success fw-400 h1 rounded-circle custom-shadow-success"
                                         style={{
                                             width: 105,
                                             height: 105,
@@ -86,7 +86,7 @@ export default function Dashboard() {
                                     }}
                                 >
                                     <div
-                                        className="d-flex align-items-center justify-content-center bg-success fw-400 h1 rounded-circle"
+                                        className="d-flex align-items-center justify-content-center bg-success fw-400 h1 rounded-circle custom-shadow-success"
                                         style={{
                                             width: 105,
                                             height: 105,
@@ -113,7 +113,7 @@ export default function Dashboard() {
                                         </h4>
                                     </div>
                                     <div className="col-7">
-                                        <h1 className="text-primary fw-900-gothic-without-ls s-62 mb-0">
+                                        <h1 className="text-primary fw-400-nofont s-48 lh-1 mt-2 mb-0">
                                             175,000
                                         </h1>
                                     </div>
@@ -148,7 +148,7 @@ export default function Dashboard() {
                                         </h4>
                                     </div>
                                     <div className="col">
-                                        <h1 className="text-primary fw-900-gothic-without-ls s-62 mb-0 lh-1">
+                                        <h1 className="text-primary fw-400-nofont s-48 mb-0 mt-2 lh-1">
                                             00:00:00
                                         </h1>
                                     </div>

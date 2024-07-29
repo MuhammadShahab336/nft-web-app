@@ -3,7 +3,7 @@ import logo from "@public/logo.svg";
 import buttonBg from "@public/button-bg2.svg";
 import Link from "next/link";
 import Image from 'next/image';
-import {routes} from "@/utils/routes";
+import { routes } from "@/utils/routes";
 
 export const HeaderTopBar = () => {
     return (
@@ -36,8 +36,10 @@ export const HeaderTopBar = () => {
                         <div className="col-auto">
                             <Link
                                 href={routes.dashboard}
-                                className="btn bg-transparent border-0 bg-image position-relative s-16 fw-400 text-white text-uppercase py-2 px-4"
-                                style={{ backgroundImage: `url(${buttonBg.src})` }}
+                                className="btn bg-transparent border-0 bg-image s-16 fw-400 text-white text-uppercase py-2 px-4 btn-svg1 on-hover-zoom"
+                                style={{
+                                    '--bg-image': `url(${buttonBg.src})`,
+                                }}
                             >
                                 <span className="my-1 px-1">
                                     ONBXY2N
