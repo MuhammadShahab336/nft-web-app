@@ -14,12 +14,12 @@ export const HeaderTopBar = () => {
                         <div className="col">
                             <div className="row gx-2 align-items-center">
                                 <div className="col-auto">
-                                    <h1 className="text-white fw-700 mb-0">
+                                    <h1 className="text-white fw-700-without-ls mb-0 me-2">
                                         ALIENZ STUDIO
                                     </h1>
                                 </div>
                                 <div className="col-auto">
-                                    <div style={{ position: 'relative', width: 100, height: 100 }}>
+                                    <div style={{ position: 'relative', width: '6.25rem', height: '6.25rem' }}>
                                         <Image
                                             alt="Logo"
                                             src={logo}
