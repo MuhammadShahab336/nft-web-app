@@ -24,8 +24,8 @@ export default function Mint() {
                         <Header title="Mint" />
 
                         <div className="container mt-5">
-                            <div className="row g-5 row-cols-lg-3 row-cols-md-2">
-                                <div className="col">
+                            <div className="row g-5 justify-content-md-between justify-content-center row-cols-lg-3 row-cols-md-2 row-cols-1">
+                                <div className="col-md col-11">
                                     <h1 className="text-white text-center fw-900 mb-4">
                                         Dank Dealerz
                                     </h1>
@@ -53,14 +53,14 @@ export default function Mint() {
                                             className="btn bg-transparent border-0 position-relative s-13 fw-400 text-white text-uppercase py-3 px-4 my-3 on-hover-zoom btn-svg1"
                                             style={{ '--bg-image': `url(${buttonBg.src})` }}
                                         >
-                                            <span className="d-block text-nowrap">
+                                            <span className="d-block p-3 text-nowrap">
                                                 burn to claim
                                             </span>
                                         </Link>
                                     </div>
 
                                 </div>
-                                <div className="col">
+                                <div className="col-md col-11">
                                     <h1 className="text-white text-center fw-900 mb-4">
                                         Mutant Pass
                                     </h1>
@@ -86,7 +86,7 @@ export default function Mint() {
                                     </div>
 
                                 </div>
-                                <div className="col">
+                                <div className="col-md col-11">
                                     <h1 className="text-white text-center fw-900 mb-4">
                                         Mutant Mint
                                     </h1>
@@ -117,9 +117,9 @@ export default function Mint() {
                         </div>
 
                         <div className="container mt-5">
-                            <div className="row g-4 row-col-3">
-                                <div className="col">
-                                    <div className="gradient-card2 p-4 text-center">
+                            <div className="row g-4 justify-content-center">
+                                <div className="col-md col-11">
+                                    <div className="gradient-card1 p-4 text-center">
                                         <h3 className="text-primary fw-400-gothic-without-ls">
                                             Disclaimer:
                                         </h3>
@@ -136,9 +136,9 @@ export default function Mint() {
                         </div>
 
                         <div className="container mt-5 pt-5 pb-5">
-                            <div className="row g-5 justify-content-between align-items-center row-cols-lg-3 row-cols-md-1">
-                                <div className="col-md">
-                                    <div className="gradient-card3 p-4 position-relative">
+                            <div className="row g-5 justify-content-md-between justify-content-center align-items-center row-cols-xxl-3 row-cols-xl-2 row-cols-lg-2 row-cols-md-1">
+                                <div className="col-md col-11">
+                                    <div className="gradient-card1 p-4 position-relative">
                                         <div className="row flex-column align-items-center">
                                             <div className="col-auto">
                                                 <h4 className="text-white fw-600-without-ls mb-0">
@@ -153,8 +153,8 @@ export default function Mint() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md">
-                                    <div className="gradient-card3 p-4 position-relative">
+                                <div className="col-md col-11">
+                                    <div className="gradient-card1 p-4 position-relative">
                                         <div className="row flex-column align-items-center">
                                             <div className="col-auto">
                                                 <h4 className="text-white fw-600 mb-0">
@@ -169,8 +169,8 @@ export default function Mint() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md">
-                                    <div className="gradient-card3 p-4 position-relative">
+                                <div className="col-md col-11">
+                                    <div className="gradient-card1 p-4 position-relative">
                                         <div className="row flex-column align-items-center">
                                             <div className="col-auto">
                                                 <h4 className="text-white fw-600 mb-0">
