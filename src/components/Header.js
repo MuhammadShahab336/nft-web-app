@@ -22,7 +22,8 @@ const Header = (props) => {
     return (
         <>
             <div className="container">
-                <div className="row justify-content-center">
+                {/* for large screen */}
+                <div className="row justify-content-center d-none d-md-flex">
                     <div className="col-lg-12 col-11">
                         <div className="row g-0 justify-content-between align-items-center py-4 position-relative">
                             <div className="col-auto">
@@ -75,6 +76,61 @@ const Header = (props) => {
                         </div>
                     </div>
                 </div>
+
+                {/* for small screen */}
+                <div className="row g-3 justify-content-center d-md-none">
+                    <div className="col-11">
+                        <div className="row g-0 justify-content-between align-items-center py-4 position-relative">
+                            <div className="col-auto">
+                                <MenuIcon
+                                    style={{
+                                        width: '3.75rem'
+                                    }}
+                                    onClick={handleShow}
+                                    type="button"
+                                />
+                            </div>
+                            <div className="col-auto">
+                                <div className="invisible">
+                                    <MenuIcon
+                                        style={{
+                                            with: 60
+                                        }}
+                                    />
+                                </div>
+                            </div>
+                            <div className="position-absolute w-auto end-0">
+                                <div className="row gx-3 align-items-center justify-content-between">
+                                    <div className="col-auto">
+                                        <div style={{ position: 'relative', width: '5rem', height: '5rem' }}>
+                                            <Image
+                                                alt="Avatar"
+                                                src={avatar}
+                                                fill
+                                                sizes="100vw"
+                                                style={{
+                                                    objectFit: "contain",
+                                                }}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="col-auto">
+                                        <CloseIcon
+                                            style={{
+                                                width: 30,
+                                                height: 30,
+                                            }}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-11">
+                        <h1 className="text-white text-center fw-700 text-uppercase mb-0">{props.title}</h1>
+                    </div>
+                </div>
+
             </div>
 
 

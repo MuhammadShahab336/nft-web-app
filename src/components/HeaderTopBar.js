@@ -11,26 +11,22 @@ export const HeaderTopBar = () => {
             <div className="bg-header-bar">
                 <div className="container py-2">
                     <div className="row justify-content-between align-items-center">
-                        <div className="col">
-                            <div className="row gx-2 align-items-center">
-                                <div className="col-auto">
-                                    <h1 className="text-white fw-700-without-ls mb-0 me-2">
-                                        ALIENZ STUDIO
-                                    </h1>
-                                </div>
-                                <div className="col-auto">
-                                    <div style={{ position: 'relative', width: '6.25rem', height: '6.25rem' }}>
-                                        <Image
-                                            alt="Logo"
-                                            src={logo}
-                                            fill
-                                            sizes="100vw"
-                                            style={{
-                                                objectFit: "contain",
-                                            }}
-                                        />
-                                    </div>
-                                </div>
+                        <div className="col-md-auto col-12 text-center">
+                            <h1 className="text-white fw-700-without-ls mb-0">
+                                ALIENZ STUDIO
+                            </h1>
+                        </div>
+                        <div className="col-auto me-md-auto">
+                            <div style={{ position: 'relative', width: '6.25rem', height: '6.25rem' }}>
+                                <Image
+                                    alt="Logo"
+                                    src={logo}
+                                    fill
+                                    sizes="100vw"
+                                    style={{
+                                        objectFit: "contain",
+                                    }}
+                                />
                             </div>
                         </div>
                         <div className="col-auto">
