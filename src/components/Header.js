@@ -8,6 +8,7 @@ import { Offcanvas } from 'react-bootstrap';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { routes } from '@/utils/routes';
+import ImageSlider from './ImageSlider';
 
 
 
@@ -50,17 +51,7 @@ const Header = (props) => {
                             <div className="position-absolute w-auto end-0">
                                 <div className="row gx-3 align-items-center justify-content-between">
                                     <div className="col-auto">
-                                        <div style={{ position: 'relative', width: '5rem', height: '5rem' }}>
-                                            <Image
-                                                alt="Avatar"
-                                                src={avatar}
-                                                fill
-                                                sizes="100vw"
-                                                style={{
-                                                    objectFit: "contain",
-                                                }}
-                                            />
-                                        </div>
+                                        <ImageSlider />
                                     </div>
                                     <div className="col-auto">
                                         <CloseIcon
@@ -102,17 +93,7 @@ const Header = (props) => {
                             <div className="position-absolute w-auto end-0">
                                 <div className="row gx-3 align-items-center justify-content-between">
                                     <div className="col-auto">
-                                        <div style={{ position: 'relative', width: '5rem', height: '5rem' }}>
-                                            <Image
-                                                alt="Avatar"
-                                                src={avatar}
-                                                fill
-                                                sizes="100vw"
-                                                style={{
-                                                    objectFit: "contain",
-                                                }}
-                                            />
-                                        </div>
+                                        <ImageSlider />
                                     </div>
                                     <div className="col-auto">
                                         <CloseIcon

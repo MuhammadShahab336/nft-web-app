@@ -6,16 +6,14 @@ import avatar from '@public/avatar5.svg'
 import BgEclipseIcon from "@/components/icons/BgEclipseIcon";
 import BgEclipseIcon2 from "@/components/icons/BgEclipseIcon2";
 import ConnectButton from "@/components/ConnectButton";
+import WelcomeModal from "@/components/WelcomeModal";
+import { AnimatePresence } from "framer-motion";
 
 
 export default function Home() {
     const [isViewModal, setIsViewModal] = useState(true)
 
-    useEffect(() => {
-        setTimeout(() => {
-            setIsViewModal(false)
-        }, 2000)
-    }, [])
+
     return (
         <>
             <div className="bg-image-fixed w-full h-full overflow-hidden position-relative" style={{ backgroundImage: `url(${mountain.src})` }}>
@@ -53,7 +51,7 @@ export default function Home() {
                             priority={true}
                             // Make the image display full width
                             style={{
-                                width: '360px',
+                                width: '22.5rem',
                                 height: 'auto',
                             }}
                         />
@@ -69,14 +67,15 @@ export default function Home() {
                             }}
                         />
                     </div> */}
+                    {!isViewModal && <ConnectButton />}
 
-                    <ConnectButton />
+
 
                 </div>
 
 
                 {!isViewModal && (
-                    <div className="position-absolute" style={{ top: 0, left: 0, zIndex: 9 }}>
+                    <div className="position-absolute w-100 h-100" style={{ top: 0, left: 0, zIndex: 9 }}>
                         <video width="100%" height="100%" muted loop autoPlay preload="none">
                             <source src="https://s3-figma-videos-production-sig.figma.com/video/1335486561388213126/TEAM/b3c6/1823/-43a5-4b28-a1c0-f5680d442f19?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GKzQ5Gn5HGCWpjNq-6wjosJ7xStRs5r4qHJkiq2ZaFjMZct9h-A59d99ipe1ZbS5~SEfiv2bEnF6eEuLyda8~KEdEab~zWZpVxixF646jMFhGr1KKyv5O4tBMIHpyQ95xayyr-wpVMDYwVbjeGc9MKXCFClGm4LjDi-r7CeG4Cuy16xNA1cd8L7kaO3~~Vot-ZD91Z1kvGkAEMstY392gKDbIyki5IUGh2k09k7zUtG88bESdnlPD81KFZE6cR7fNhf3Qf24x5lCtClScIh6AHnVff~~-5c3q7W6AjdrtnK~z4ugP~SxnSD5OpfaVYjgZUWD5DJFnLg2TRVx1kKaBA__" type="video/mp4" />
 
@@ -85,8 +84,15 @@ export default function Home() {
                     </div>
                 )}
 
+                <AnimatePresence mode="wait">
+                    <WelcomeModal
+                        showModal={isViewModal}
+                        closeModal={() => setIsViewModal(false)}
+                    />
+                </AnimatePresence>
 
-                {isViewModal && (
+
+                {/* {isViewModal && (
                     <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style={{ zIndex: 12 }}>
                         <div className="col-9">
                             <div className="border border-2 border-primary p-md-5 p-3 rounded-5" style={{ background: '#00000099', backdropFilter: 'blur(8px)' }} >
@@ -100,7 +106,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                )}
+                )} */}
 
             </div>
 

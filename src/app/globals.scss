@@ -507,7 +507,11 @@ body {
 
 @include media-breakpoint-only(xs) {
     html {
-        font-size: 9px;
+        font-size: 10px;
+    }
+
+    .bg-image-fixed {
+        background-size: 650%;
     }
 }
 
