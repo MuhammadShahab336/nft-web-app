@@ -448,6 +448,43 @@ body {
     z-index: 0;
 }
 
+.bg-overlay-air {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-overlay-air::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 12%;
+    bottom: -100px;
+    left: 0;
+    background-image: var(--eclipse-image);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100%;
+    z-index: 0;
+}
+
+.overlay-rewards {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-rewards::before {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 12.21%, #000000 100%);
+    z-index: 0;
+}
+
 .custom-shadow-success {
     box-shadow: 0 -0.5rem 1rem #ADFF00b1;
 }
@@ -512,6 +549,11 @@ body {
 
     .bg-image-fixed {
         background-size: 650%;
+    }
+
+    .mobile-screen {
+        width: 100%;
+        height: 100%;
     }
 }
 

@@ -30,7 +30,7 @@ const ImageSlider = () => {
 
     return (
         <>
-            <div className='rounded-circle border-grey overflow-hidden' style={{ position: 'relative', width: '5rem', height: '5rem' }}>
+            <div className='rounded-circle overflow-hidden' style={{ position: 'relative', width: '5rem', height: '5rem' }}>
                 <motion.div
                     key={currentImageIndex}
                     initial={{ opacity: 0 }}

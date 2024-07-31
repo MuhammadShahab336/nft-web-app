@@ -1,7 +1,7 @@
 export const routes = {
     dashboard: '/dashboard',
     mint: '/mint',
-    stack: '/stack',
+    stack: '/stake',
     gallery: '/gallery',
     rewards: '/rewards',
     air: '/air'

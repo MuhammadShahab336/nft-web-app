@@ -146,16 +146,10 @@ const Header = (props) => {
                                         Mint
                                     </Link>
                                     <Link
-                                        href={routes.rewards}
-                                        class={`nav-link fw-400 text-capatalize ${pathname == routes.rewards ? 'active' : ''}`}
-                                    >
-                                        Rewards
-                                    </Link>
-                                    <Link
                                         href={routes.stack}
                                         class={`nav-link fw-400 text-capatalize ${pathname == routes.stack ? 'active' : ''}`}
                                     >
-                                        Stacke
+                                        Stake
                                     </Link>
                                     <Link
                                         href={routes.gallery}
@@ -170,10 +164,10 @@ const Header = (props) => {
                                         Air
                                     </Link>
                                     <Link
-                                        href={routes.stack}
-                                        class={`nav-link fw-400 text-capatalize ${pathname == routes.stack ? 'active' : ''}`}
+                                        href={routes.rewards}
+                                        class={`nav-link fw-400 text-capatalize ${pathname == routes.rewards ? 'active' : ''}`}
                                     >
-                                        Stack
+                                        Rewards
                                     </Link>
                                 </li>
                             </ul>

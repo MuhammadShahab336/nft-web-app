@@ -8,7 +8,7 @@ const backdropVariants = {
 
 const modalVariants = {
     hidden: {
-        y: "-100vh",
+        y: "0",
         opacity: 0,
     },
     visible: {
@@ -27,7 +27,7 @@ const WelcomeModal = ({ showModal, closeModal }) => {
     useEffect(() => {
         setTimeout(() => {
             closeModal()
-        }, 2000)
+        }, 4000)
     }, [])
     return (
         <>
@@ -49,7 +49,7 @@ const WelcomeModal = ({ showModal, closeModal }) => {
                         className="col-9 border border-2 border-primary p-md-5 p-3 rounded-5"
                         style={{ background: '#00000099', backdropFilter: 'blur(8px)' }}
                         variants={modalVariants}
-                        initial="hidden"
+                        initial="visible"
                         animate="visible"
                         exit="exit"
                         onClick={(e) => e.stopPropagation()} // Prevent click from closing modal when clicking inside the modal
