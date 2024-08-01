@@ -24,20 +24,20 @@ export default function Stack() {
 
                     <div className="position-relative" style={{ zIndex: 2 }}>
                         <HeaderTopBar />
-                        <Header title="Stack" />
+                        <Header title="Stake" />
 
                         <div className="container mt-5 pt-5">
-                            <div className="row g-5 justify-content-between align-items-center row-cols-lg-2 row-cols-1">
-                                <div className="col ps-lg-5 align-self-stretch">
+                            <div className="row g-5 justify-content-md-between justify-content-center align-items-center row-cols-lg-2 row-cols-1">
+                                <div className="col-md col-11 ps-lg-5 align-self-stretch">
                                     <div className="border border-success rounded-20 bg-grey-dark p-4 position-relative h-100 card-blur">
                                         <div
                                             className="position-absolute"
                                             style={{
-                                                bottom: width > 600 ? '45%' : '78%',
-                                                left: width > 600 ? '-35px' : '-16px',
+                                                bottom: width > 768 ? '45%' : '78%',
+                                                left: width > 768 ? '-35px' : '-16px',
                                             }}
                                         >
-                                            <div style={{ position: 'relative', width: width > 600 ? 160 : 100, height: width > 600 ? 160 : 100 }}>
+                                            <div style={{ position: 'relative', width: '10rem', height: '10rem' }}>
                                                 <Image
                                                     alt="avatar"
                                                     src={avatar}
@@ -69,11 +69,11 @@ export default function Stack() {
                                         <div
                                             className="position-absolute"
                                             style={{
-                                                bottom: width > 600 ? -35 : -32,
-                                                right: width > 600 ? -70 : -53,
+                                                bottom: width > 991 ? -35 : -10,
+                                                right: width > 991 ? -70 : -40,
                                             }}
                                         >
-                                            <div style={{ position: 'relative', width: width > 600 ? 170 : 150, height: width > 600 ? 200 : 150 }}>
+                                            <div style={{ position: 'relative', width: '10.625rem', height: '10.625rem' }}>
                                                 <Image
                                                     alt="dollars"
                                                     src={dollars}
@@ -87,7 +87,7 @@ export default function Stack() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col pe-lg-5 align-self-stretch">
+                                <div className="col-md col-11 pe-lg-5 align-self-stretch">
                                     <div className="border border-success rounded-20 bg-grey-dark p-4 position-relative h-100 card-blur">
                                         <div className="row gx-0 align-items-end h-100">
                                             <div className="col-12">
@@ -109,11 +109,11 @@ export default function Stack() {
                                         <div
                                             className="position-absolute"
                                             style={{
-                                                bottom: width > 600 ? -35 : -32,
-                                                right: width > 600 ? -70 : -53,
+                                                bottom: width > 991 ? -35 : -10,
+                                                right: width > 991 ? -70 : -40,
                                             }}
                                         >
-                                            <div style={{ position: 'relative', width: width > 600 ? 170 : 150, height: width > 600 ? 200 : 150 }}>
+                                            <div style={{ position: 'relative', width: '10.625rem', height: '10.625rem' }}>
                                                 <Image
                                                     alt="dollars"
                                                     src={dollars}
@@ -131,8 +131,8 @@ export default function Stack() {
                         </div>
 
                         <div className="container mt-5 pt-5">
-                            <div className="row g-5 justify-content-between align-items-center row-cols-lg-2 row-cols-1">
-                                <div className="col px-md-5 align-self-stretch">
+                            <div className="row g-5 justify-content-md-between justify-content-center align-items-center row-cols-lg-2 row-cols-1">
+                                <div className="col-md col-11 px-md-5 align-self-stretch">
                                     <div className="border border-primary rounded-20 bg-grey-dark p-4 position-relative h-100 card-blur">
                                         <div className="row gx-2 align-items-center h-100">
                                             <div className="col-4">
@@ -156,11 +156,11 @@ export default function Stack() {
                                         <div
                                             className="position-absolute"
                                             style={{
-                                                bottom: width > 600 ? -40 : -22,
-                                                right: width > 600 ? -80 : -22,
+                                                bottom: width > 991 ? -40 : -22,
+                                                right: width > 991 ? -80 : -22,
                                             }}
                                         >
-                                            <div style={{ position: 'relative', width: width > 600 ? 150 : 100, height: width > 600 ? 150 : 100 }}>
+                                            <div style={{ position: 'relative', width: '9.375rem', height: '9.375rem' }}>
                                                 <Image
                                                     alt="Coins"
                                                     src={nftCoins2}
@@ -175,7 +175,7 @@ export default function Stack() {
                                     </div>
                                 </div>
 
-                                <div className="col px-md-5 align-self-stretch">
+                                <div className="col-md col-11 px-md-5 align-self-stretch">
                                     <div className="border border-primary rounded-20 bg-grey-dark p-4 position-relative h-100 card-blur">
                                         <div className="row gx-2 align-items-center h-100">
                                             <div className="col-4">
@@ -199,11 +199,11 @@ export default function Stack() {
                                         <div
                                             className="position-absolute"
                                             style={{
-                                                bottom: width > 600 ? -40 : -22,
-                                                right: width > 600 ? -80 : -22,
+                                                bottom: width > 991 ? -40 : -22,
+                                                right: width > 991 ? -80 : -22,
                                             }}
                                         >
-                                            <div style={{ position: 'relative', width: width > 600 ? 150 : 100, height: width > 600 ? 150 : 100 }}>
+                                            <div style={{ position: 'relative', width: '9.375rem', height: '9.375rem' }}>
                                                 <Image
                                                     alt="Coins"
                                                     src={nftCoins2}
@@ -222,8 +222,8 @@ export default function Stack() {
                         </div>
 
                         <div className="container mt-5 pt-5 pb-5">
-                            <div className="row g-5 justify-content-between align-items-center row-cols-lg-3">
-                                <div className="col pe-md-5 align-self-stretch">
+                            <div className="row g-5 justify-content-md-between justify-content-center align-items-center row-cols-xl-3 row-cols-lg-2 row-cols-lg-2 row-cols-1">
+                                <div className="col-md col-11 pe-xl-5 align-self-stretch">
                                     <div className="border border-success rounded-20 bg-grey-dark p-4 position-relative h-100 card-blur">
                                         <div className="row gx-5 align-items-center h-100">
                                             <div className="col-6">
@@ -241,11 +241,11 @@ export default function Stack() {
                                         <div
                                             className="position-absolute"
                                             style={{
-                                                bottom: width > 600 ? -30 : -44,
-                                                right: width > 600 ? -100 : -64,
+                                                bottom: width > 600 ? '-2rem' : -20,
+                                                right: width > 600 ? '-5.75rem' : 0,
                                             }}
                                         >
-                                            <div style={{ position: 'relative', width: width > 600 ? 170 : 140, height: width > 600 ? 200 : 140 }}>
+                                            <div style={{ position: 'relative', width: '10.625rem', height: '10.625rem' }}>
                                                 <Image
                                                     alt="Coins"
                                                     src={Coins}
@@ -260,7 +260,7 @@ export default function Stack() {
                                     </div>
                                 </div>
 
-                                <div className="col pe-md-5 align-self-stretch">
+                                <div className="col-md col-11 pe-xl-5 align-self-stretch">
                                     <div className="border border-success rounded-20 bg-grey-dark p-4 position-relative h-100 card-blur">
                                         <div className="row gx-5 align-items-center h-100">
                                             <div className="col-6">
@@ -278,11 +278,11 @@ export default function Stack() {
                                         <div
                                             className="position-absolute"
                                             style={{
-                                                bottom: width > 600 ? -30 : -44,
-                                                right: width > 600 ? -100 : -64,
+                                                bottom: width > 600 ? '-2rem' : -20,
+                                                right: width > 600 ? '-5.75rem' : 0,
                                             }}
                                         >
-                                            <div style={{ position: 'relative', width: width > 600 ? 170 : 140, height: width > 600 ? 170 : 140 }}>
+                                            <div style={{ position: 'relative', width: '10.625rem', height: '10.625rem' }}>
                                                 <Image
                                                     alt="Coins"
                                                     src={Coins}
@@ -297,7 +297,7 @@ export default function Stack() {
                                     </div>
                                 </div>
 
-                                <div className="col align-self-stretch">
+                                <div className="colmd col-11 align-self-stretch">
                                     <div className="border border-success rounded-20 bg-grey-dark p-4 position-relative h-100 d-flex flex-column justify-content-end card-blur">
                                         <div className="row gx-5 align-items-center h-100">
                                             <div className="col-6">
@@ -315,11 +315,11 @@ export default function Stack() {
                                         <div
                                             className="position-absolute"
                                             style={{
-                                                bottom: width > 600 ? -30 : -40,
-                                                right: width > 600 ? -100 : -41,
+                                                bottom: width > 600 ? '-2rem' : -20,
+                                                right: width > 600 ? '-5.75rem' : 0,
                                             }}
                                         >
-                                            <div style={{ position: 'relative', width: width > 600 ? 170 : 140, height: width > 600 ? 170 : 140 }}>
+                                            <div style={{ position: 'relative', width: '10.625rem', height: '10.625rem' }}>
                                                 <Image
                                                     alt="Nft Coins"
                                                     src={nftCoins}
@@ -338,8 +338,8 @@ export default function Stack() {
                         </div>
 
                         <div className="container mt-5 pt-5">
-                            <div className="row g-3 justify-content-between align-items-center row-cols-lg-4">
-                                <div className="col-md align-self-stretch mt-5">
+                            <div className="row g-4 justify-content-md-between justify-content-center align-items-center row-cols-xl-4 row-cols-lg-2 row-cols-md-2 row-cols-1">
+                                <div className="col-md col-11 align-self-stretch mt-5 mb-5">
                                     <div className="border border-primary bg-grey-dark p-4 pt-5 rounded-20 position-relative h-100 d-flex flex-column justify-content-end card-blur">
                                         <h4 className="text-white text-center fw-900 s-21 mb-2">
                                             Staked
@@ -358,8 +358,8 @@ export default function Stack() {
                                             <div
                                                 className="d-flex align-items-center p-2 justify-content-center text-center bg-success fw-400-gothic h4 rounded-circle lh-1 custom-shadow-success2"
                                                 style={{
-                                                    width: 90,
-                                                    height: 90,
+                                                    width: '5.625rem',
+                                                    height: '5.625rem',
                                                 }}
                                             >
                                                 Tier
@@ -369,7 +369,7 @@ export default function Stack() {
 
                                     </div>
                                 </div>
-                                <div className="col-md align-self-stretch mt-5">
+                                <div className="col-md col-11 align-self-stretch mt-5 mb-5">
                                     <div className="border border-primary bg-grey-dark p-4 pt-5 rounded-20 position-relative h-100 d-flex flex-column justify-content-end card-blur ">
                                         <h4 className="text-white text-center fw-900 s-21 mb-2">
                                             Staked
@@ -388,8 +388,8 @@ export default function Stack() {
                                             <div
                                                 className="d-flex align-items-center p-2 justify-content-center text-center bg-success fw-400-gothic h4 rounded-circle lh-1 custom-shadow-success2"
                                                 style={{
-                                                    width: 90,
-                                                    height: 90,
+                                                    width: '5.625rem',
+                                                    height: '5.625rem',
                                                 }}
                                             >
                                                 Tier
@@ -399,7 +399,7 @@ export default function Stack() {
 
                                     </div>
                                 </div>
-                                <div className="col-md align-self-stretch mt-5">
+                                <div className="col-md col-11 align-self-stretch mt-5 mb-5">
                                     <div className="border border-primary bg-grey-dark p-4 pt-5 rounded-20 position-relative h-100 d-flex flex-column justify-content-end card-blur">
                                         <h4 className="text-white text-center fw-900 s-21 mb-2">
                                             Mutant Staking
@@ -417,8 +417,8 @@ export default function Stack() {
                                             <div
                                                 className="d-flex align-items-center p-2 justify-content-center text-center bg-success fw-400-gothic h4 rounded-circle lh-1 custom-shadow-success2"
                                                 style={{
-                                                    width: 90,
-                                                    height: 90,
+                                                    width: '5.625rem',
+                                                    height: '5.625rem',
                                                 }}
                                             >
                                                 Tier
@@ -428,7 +428,7 @@ export default function Stack() {
 
                                     </div>
                                 </div>
-                                <div className="col-md align-self-stretch mt-5">
+                                <div className="col-md col-11 align-self-stretch mt-5 mb-5">
                                     <div className="border border-primary bg-grey-dark p-4 pt-5 rounded-20 position-relative h-100 d-flex flex-column justify-content-end card-blur">
                                         <h4 className="text-white text-center fw-900 s-21 mb-2">
                                             Trait Staking
@@ -446,8 +446,8 @@ export default function Stack() {
                                             <div
                                                 className="d-flex align-items-center p-2 justify-content-center text-center bg-success fw-400-gothic h4 rounded-circle lh-1 custom-shadow-success2"
                                                 style={{
-                                                    width: 90,
-                                                    height: 90,
+                                                    width: '5.625rem',
+                                                    height: '5.625rem',
                                                 }}
                                             >
                                                 Tier
@@ -465,8 +465,8 @@ export default function Stack() {
 
 
                         <div className="container mt-5 pt-5 pb-5">
-                            <div className="row g-4 row-col-3">
-                                <div className="col">
+                            <div className="row g-4 justify-content-center">
+                                <div className="col-md col-11">
                                     <div className="gradient-card2 p-4 text-center">
                                         <h3 className="text-primary fw-400-gothic">
                                             Disclaimer:
