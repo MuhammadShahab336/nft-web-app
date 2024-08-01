@@ -90,7 +90,7 @@ body {
 }
 
 .bg-overlay {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .bg-overlay2 {
@@ -102,7 +102,7 @@ body {
 }
 
 .bg-image-fixed {
-    background-size: 450%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -430,7 +430,7 @@ body {
 }
 
 .bg-overlay-mint {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.2);
     position: relative;
 }
 

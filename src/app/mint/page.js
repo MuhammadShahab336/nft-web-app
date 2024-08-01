@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import { HeaderTopBar } from "@/components/HeaderTopBar";
 import Image from "next/image";
-import stars from "@public/stars.jpeg"
+import stars from "@public/star2.svg"
 import cardBg from "@public/card-bg3.png"
 import nftImage from "@public/nft-image.png"
 import nftImage2 from "@public/nft-image2.png"

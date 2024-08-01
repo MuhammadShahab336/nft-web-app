@@ -2,7 +2,7 @@
 import Header from "@/components/Header";
 import { HeaderTopBar } from "@/components/HeaderTopBar";
 import Image from "next/image";
-import stars from "@public/stars.jpeg"
+import stars from "@public/star2.svg"
 import Coins from "@public/note.svg";
 import nftCoins from "@public/nft-coin.svg";
 import nftCoins2 from "@public/nft-coin2.svg";
@@ -18,7 +18,7 @@ export default function Stack() {
     console.log('width', width)
     return (
         <>
-            <div className="bg-image-fixed w-100" style={{ backgroundImage: `url(${stars.src})` }}>
+            <div className="bg-image-fixed w-100" style={{ backgroundImage: `url(${stars.src})`, backgroundPosition: 'bottom' }}>
                 <div className="bg-overlay-staked min-h-full w-100" style={{ '--bg-image': `url(${bgShadow.src})`, '--eclipse-image': `url(${eclipseImage.src})`, }}>
 
 

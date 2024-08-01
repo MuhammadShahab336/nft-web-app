@@ -15,7 +15,7 @@ export default function Dashboard() {
         <>
             <div className="w-100 min-h-full bg-dark">
                 <HeaderTopBar />
-                <Header title="Dashboard" />
+                <Header title="Dashboard" profile={true} />
 
 
                 <div className="container mt-5">

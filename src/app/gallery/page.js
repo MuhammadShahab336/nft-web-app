@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import { HeaderTopBar } from "@/components/HeaderTopBar";
-import stars from "@public/stars.jpeg"
+import stars from "@public/star2.svg"
 import nftImage from "@public/nft-image.png"
 import Image from "next/image";
 import spaceShip from "@public/spaceship.png"
@@ -12,14 +12,14 @@ import CollapseGallery from "@/components/CollapseGallery";
 export default function Gallery() {
     return (
         <>
-            <div className="bg-image-fixed w-100" style={{ backgroundImage: `url(${stars.src})` }}>
+            <div className="bg-image-fixed w-100" style={{ backgroundImage: `url(${stars.src})`, backgroundPosition: 'bottom' }}>
                 <div className="bg-overlay min-h-full w-100">
                     <div className="w-100 h-100 black-gradient" style={{ '--eclipse-image': `url(${eclipseImage.src})`, '--eclipse-image2': `url(${eclipseImage2.src})`, }}>
 
                         <div className="position-relative" style={{ zIndex: 1 }}>
 
                             <HeaderTopBar />
-                            <Header title="Gallery" />
+                            <Header title="Gallery" gallery={true} />
 
 
                             <div className="container py-5">

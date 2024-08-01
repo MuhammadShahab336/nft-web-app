@@ -50,17 +50,39 @@ const Header = (props) => {
                             </div>
                             <div className="position-absolute w-auto end-0">
                                 <div className="row gx-3 align-items-center justify-content-between">
-                                    <div className="col-auto">
-                                        <ImageSlider />
-                                    </div>
-                                    <div className="col-auto">
-                                        <CloseIcon
-                                            style={{
-                                                width: 30,
-                                                height: 30,
-                                            }}
-                                        />
-                                    </div>
+                                    {props?.gallery && (
+                                        <div className="col-auto">
+                                            <ImageSlider />
+                                        </div>
+                                    )}
+
+                                    {props?.profile && (
+                                        <div className="col-auto">
+                                            <div className='rounded-circle overflow-hidden' style={{ position: 'relative', width: '5rem', height: '5rem' }}>
+                                                <Image
+                                                    alt={`Image Profile`}
+                                                    src={avatar}
+                                                    fill
+                                                    sizes="100vw"
+                                                    style={{
+                                                        objectFit: "contain",
+                                                    }}
+                                                />
+                                            </div>
+                                        </div>
+                                    )}
+                                    {props?.profile && (
+                                        <div className="col-auto">
+                                            <CloseIcon
+                                                style={{
+                                                    width: 30,
+                                                    height: 30,
+                                                }}
+                                            />
+                                        </div>
+                                    )}
+
+
                                 </div>
                             </div>
 
@@ -92,17 +114,40 @@ const Header = (props) => {
                             </div>
                             <div className="position-absolute w-auto end-0">
                                 <div className="row gx-3 align-items-center justify-content-between">
-                                    <div className="col-auto">
-                                        <ImageSlider />
-                                    </div>
-                                    <div className="col-auto">
-                                        <CloseIcon
-                                            style={{
-                                                width: 30,
-                                                height: 30,
-                                            }}
-                                        />
-                                    </div>
+                                    {props?.profile && (
+                                        <div className="col-auto">
+                                            <div className='rounded-circle overflow-hidden' style={{ position: 'relative', width: '5rem', height: '5rem' }}>
+                                                <Image
+                                                    alt={`Image Profile`}
+                                                    src={avatar}
+                                                    fill
+                                                    sizes="100vw"
+                                                    style={{
+                                                        objectFit: "contain",
+                                                    }}
+                                                />
+                                            </div>
+                                        </div>
+                                    )}
+
+                                    {props?.gallery && (
+                                        <div className="col-auto">
+                                            <ImageSlider />
+                                        </div>
+                                    )}
+
+                                    {props?.profile && (
+                                        <div className="col-auto">
+                                            <CloseIcon
+                                                style={{
+                                                    width: 30,
+                                                    height: 30,
+                                                }}
+                                            />
+                                        </div>
+                                    )}
+
+
                                 </div>
                             </div>
                         </div>
