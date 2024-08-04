@@ -17,7 +17,7 @@ export default function Rewards() {
                     <div className="overlay-rewards">
                         <div className="position-relative" style={{ zIndex: 1 }}>
                             <HeaderTopBar />
-                            <Header title="Rewards" />
+                            <Header title="Rewards" reward={true} />
 
                             <div className="container py-5">
                                 <div className="row justify-content-center">

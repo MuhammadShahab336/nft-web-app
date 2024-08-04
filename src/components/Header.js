@@ -3,6 +3,8 @@ import React, { useState, memo } from 'react'
 import Image from 'next/image';
 import CloseIcon from "@/components/icons/CloseIcon";
 import avatar from "@public/avatar2.png";
+import rewardImage1 from "@public/reward-title1.svg";
+import rewardImage2 from "@public/reward-title2.svg";
 import MenuIcon from "@/components/icons/MenuIcon";
 import { Offcanvas } from 'react-bootstrap';
 import Link from 'next/link';
@@ -37,7 +39,42 @@ const Header = (props) => {
                                 />
                             </div>
                             <div className="col-auto">
-                                <h1 className="text-white fw-700 text-uppercase mb-0">{props.title}</h1>
+                                {props?.reward ? (
+                                    <div className="row align-items-center justify-content-center">
+                                        <div className="col-auto">
+                                            <div className='rounded-circle overflow-hidden' style={{ position: 'relative', width: '5rem', height: '5rem' }}>
+                                                <Image
+                                                    alt={`Image Profile`}
+                                                    src={rewardImage2}
+                                                    fill
+                                                    sizes="100vw"
+                                                    style={{
+                                                        objectFit: "contain",
+                                                    }}
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="col-auto">
+                                            <h1 className="text-white text-center fw-700 text-uppercase mb-0">{props.title}</h1>
+                                        </div>
+                                        <div className="col-auto">
+                                            <div className='rounded-circle overflow-hidden' style={{ position: 'relative', width: '5rem', height: '5rem' }}>
+                                                <Image
+                                                    alt={`Image Profile`}
+                                                    src={rewardImage1}
+                                                    fill
+                                                    sizes="100vw"
+                                                    style={{
+                                                        objectFit: "contain",
+                                                    }}
+                                                />
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                ) : (
+                                    <h1 className="text-white text-center fw-700 text-uppercase mb-0">{props.title}</h1>
+                                )}
                             </div>
                             <div className="col-auto">
                                 <div className="invisible">
@@ -153,7 +190,43 @@ const Header = (props) => {
                         </div>
                     </div>
                     <div className="col-11">
-                        <h1 className="text-white text-center fw-700 text-uppercase mb-0">{props.title}</h1>
+                        {props?.reward ? (
+                            <div className="row align-items-center justify-content-center">
+                                <div className="col-auto">
+                                    <div className='rounded-circle overflow-hidden' style={{ position: 'relative', width: '5rem', height: '5rem' }}>
+                                        <Image
+                                            alt={`Image Profile`}
+                                            src={rewardImage2}
+                                            fill
+                                            sizes="100vw"
+                                            style={{
+                                                objectFit: "contain",
+                                            }}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="col-auto">
+                                    <h1 className="text-white text-center fw-700 text-uppercase mb-0">{props.title}</h1>
+                                </div>
+                                <div className="col-auto">
+                                    <div className='rounded-circle overflow-hidden' style={{ position: 'relative', width: '5rem', height: '5rem' }}>
+                                        <Image
+                                            alt={`Image Profile`}
+                                            src={rewardImage1}
+                                            fill
+                                            sizes="100vw"
+                                            style={{
+                                                objectFit: "contain",
+                                            }}
+                                        />
+                                    </div>
+                                </div>
+
+                            </div>
+                        ) : (
+                            <h1 className="text-white text-center fw-700 text-uppercase mb-0">{props.title}</h1>
+                        )}
+
                     </div>
                 </div>
 
