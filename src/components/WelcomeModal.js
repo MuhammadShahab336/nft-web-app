@@ -1,5 +1,8 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion';
+import { Button } from 'react-bootstrap';
+import Link from 'next/link';
+import { routes } from '@/utils/routes';
 
 const backdropVariants = {
     visible: { opacity: 1 },
@@ -24,13 +27,26 @@ const modalVariants = {
 };
 
 const WelcomeModal = ({ showModal, closeModal }) => {
+    const [IsSkip, setIsSkip] = useState(false)
+
     useEffect(() => {
         setTimeout(() => {
             closeModal()
+            setTimeout(() => {
+                setIsSkip(true)
+            }, 6000)
         }, 4000)
     }, [])
+
     return (
         <>
+
+            {IsSkip && (
+                <Link href={routes.dashboard} className='position-absolute btn btn-dark rounded-pill border fw-400-gothic-without-ls' style={{ zIndex: 15, top: 25, right: 25, position: 'absolute' }}>
+                    Skip, Continue to DApp
+                </Link>
+            )}
+
             {showModal && (
                 <motion.div
                     className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
