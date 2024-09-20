@@ -26,7 +26,7 @@ const modalVariants = {
     },
 };
 
-const WelcomeModal = ({ showModal, closeModal }) => {
+const WelcomeModal = ({ showModal, closeModal, openModal }) => {
     const [IsSkip, setIsSkip] = useState(false)
 
     useEffect(() => {
@@ -39,7 +39,12 @@ const WelcomeModal = ({ showModal, closeModal }) => {
         <>
 
             {IsSkip && (
-                <button onClick={() => closeModal()} className='position-absolute btn btn-dark rounded-pill border fw-400-gothic-without-ls' style={{ zIndex: 15, top: 25, right: 25, position: 'absolute' }}>
+                <button
+                    onClick={() => {
+                        openModal()
+                        setIsSkip(false)
+                    }}
+                    className='position-absolute btn btn-dark rounded-pill border fw-400-gothic-without-ls' style={{ zIndex: 15, top: 25, right: 25, position: 'absolute' }}>
                     Skip, Continue to DApp
                 </button>
             )}
@@ -52,7 +57,7 @@ const WelcomeModal = ({ showModal, closeModal }) => {
                     initial="hidden"
                     animate="visible"
                     exit="exit"
-                    onClick={() => closeModal()}
+                    onClick={closeModal}
                     role="dialog"
                     aria-modal="true"
                     aria-labelledby="modal-title"
@@ -77,6 +82,11 @@ const WelcomeModal = ({ showModal, closeModal }) => {
                                 </span>
                                 &nbsp; Welcome to the DankDealerz Collection; we are a cannabis-driven NFT project that offers cannabis merch rewards to holders who “Mint 2 Earn”. We are NOT solely a reward project and do not promise every holder who mints will receive a reward. There is a minting criteria that a holder MUST meet in order to receive a reward. Tokens earned by staking give holders an added perk to POTENTIALLY receive more rewards. We DO NOT promise every holder who mints will earn a reward; only those that meet the specified requirements. Each NFT minted will be accounted for when rewards are redeemed. Rewards will be on a first-come, first-served basis and made available until the collection is minted out. Raffles, auctions, and any form of giveaways will be made available for each holder to participate in; please understand that we strive to keep this project fair, reasonable, and fun for our community. Welcome and thank you for considering the DankDealerz project.
                             </p>
+                            <button
+                                onClick={closeModal}
+                                className='btn btn-dark rounded-20 border s-20 fw-400-gothic-without-ls mt-4'>
+                                OK
+                            </button>
                         </div>
                     </motion.div>
                 </motion.div>

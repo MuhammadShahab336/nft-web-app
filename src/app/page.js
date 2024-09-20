@@ -13,6 +13,7 @@ import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 export default function Home() {
     const [isViewModal, setIsViewModal] = useState(false)
+    const [IsViewLogo, setIsViewLogo] = useState(false)
     const { width, height } = useWindowDimensions()
 
 
@@ -42,22 +43,25 @@ export default function Home() {
                             width: '100%'
                         }}
                     />
-                    <div style={{ display: 'flex', flexDirection: 'column' }}>
-                        <Image
-                            alt="Mountains"
-                            // Importing an image will
-                            // automatically set the width and height
-                            src={avatar}
-                            sizes="100vw"
-                            className="image-shadow"
-                            priority={true}
-                            // Make the image display full width
-                            style={{
-                                width: '22.5rem',
-                                height: 'auto',
-                            }}
-                        />
-                    </div>
+                    {IsViewLogo && (
+                        <div style={{ display: 'flex', flexDirection: 'column' }}>
+                            <Image
+                                alt="Mountains"
+                                // Importing an image will
+                                // automatically set the width and height
+                                src={avatar}
+                                sizes="100vw"
+                                className="image-shadow"
+                                priority={true}
+                                // Make the image display full width
+                                style={{
+                                    width: '22.5rem',
+                                    height: 'auto',
+                                }}
+                            />
+                        </div>
+                    )}
+
                     {/* <div style={{ position: 'relative', width: 600, height: 600 }}>
                         <Image
                             alt="Avatar"
@@ -69,16 +73,16 @@ export default function Home() {
                             }}
                         />
                     </div> */}
-                    {!isViewModal && <ConnectButton />}
+                    {IsViewLogo && <ConnectButton />}
 
 
                 </div>
 
 
-                {!isViewModal && (
+                {!IsViewLogo && (
                     <div className="position-absolute mobile-screen" style={{ top: 0, left: 0, zIndex: 9, width: '100%', height: '100%' }}>
-                        <video 
-                            width={width} height={'100%'} muted loop autoPlay preload="none" style={{ objectFit: 'cover' }}
+                        <video
+                            width={width} height={'100%'} muted loop autoPlay preload="none" style={{ objectFit: 'contain' }}
                             onEnded={() => setIsViewModal(true)}
                         >
                             <source src="/video.mp4" type="video/mp4" />
@@ -91,7 +95,15 @@ export default function Home() {
                 <AnimatePresence mode="wait">
                     <WelcomeModal
                         showModal={isViewModal}
-                        closeModal={() => setIsViewModal(false)}
+                        closeModal={() => {
+                            setIsViewModal(false)
+                            setIsViewLogo(true)
+                        }}
+                        openModal={() => {
+                            setIsViewModal(true)
+                            setTimeout(() => setIsViewLogo(true), 500)
+
+                        }}
                     />
                 </AnimatePresence>
 
