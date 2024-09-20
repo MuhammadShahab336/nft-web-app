@@ -12,7 +12,7 @@ import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 
 export default function Home() {
-    const [isViewModal, setIsViewModal] = useState(true)
+    const [isViewModal, setIsViewModal] = useState(false)
     const { width, height } = useWindowDimensions()
 
 
@@ -77,7 +77,10 @@ export default function Home() {
 
                 {!isViewModal && (
                     <div className="position-absolute mobile-screen" style={{ top: 0, left: 0, zIndex: 9, width: '100%', height: '100%' }}>
-                        <video width={width} height={'100%'} muted loop autoPlay preload="none" style={{ objectFit: 'cover' }}>
+                        <video 
+                            width={width} height={'100%'} muted loop autoPlay preload="none" style={{ objectFit: 'cover' }}
+                            onEnded={() => setIsViewModal(true)}
+                        >
                             <source src="/video.mp4" type="video/mp4" />
 
                             Your browser does not support the video tag.

@@ -31,20 +31,17 @@ const WelcomeModal = ({ showModal, closeModal }) => {
 
     useEffect(() => {
         setTimeout(() => {
-            closeModal()
-            setTimeout(() => {
-                setIsSkip(true)
-            }, 6000)
-        }, 4000)
+            setIsSkip(true)
+        }, 6000)
     }, [])
 
     return (
         <>
 
             {IsSkip && (
-                <Link href={routes.dashboard} className='position-absolute btn btn-dark rounded-pill border fw-400-gothic-without-ls' style={{ zIndex: 15, top: 25, right: 25, position: 'absolute' }}>
+                <button onClick={() => closeModal()} className='position-absolute btn btn-dark rounded-pill border fw-400-gothic-without-ls' style={{ zIndex: 15, top: 25, right: 25, position: 'absolute' }}>
                     Skip, Continue to DApp
-                </Link>
+                </button>
             )}
 
             {showModal && (
