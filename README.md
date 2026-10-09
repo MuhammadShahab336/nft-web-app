@@ -1,36 +1,131 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DankDealerz NFT Web App
+
+A modern NFT-themed web application built with Next.js for showcasing and managing a digital collectibles ecosystem. The app includes a landing screen, dashboard, NFT mint views, staking information, gallery, rewards, and airdrop/air page sections.
+
+## Overview
+
+This project presents a fictional NFT collection experience styled as a premium crypto web app. It includes:
+
+- Intro/landing experience with animated welcome modal and video backdrop
+- Dashboard with wallet NFT counts and reward statistics
+- Mint section with multiple NFT cards and mint actions
+- Staking page with reward tiers and token details
+- Gallery for NFT collection browsing
+- Rewards page describing claim tiers and perks
+- Airdrop/air experience with mobile-style presentation
+
+## Tech Stack
+
+- Next.js 14
+- React 18
+- Bootstrap 5
+- React Bootstrap
+- Sass / SCSS
+- Framer Motion
+- ESLint
+
+## Project Structure
+
+```text
+nft-web-app/
+├── public/                  # Static assets, images, SVGs, videos
+├── src/
+│   ├── app/                # App router pages and layout
+│   │   ├── air/
+│   │   ├── dashboard/
+│   │   ├── gallery/
+│   │   ├── mint/
+│   │   ├── rewards/
+│   │   ├── stake/
+│   │   ├── globals.scss
+│   │   ├── layout.js
+│   │   ├── page.js
+│   │   └── page.module.css
+│   ├── components/         # Reusable UI components
+│   ├── hooks/              # Custom hooks
+│   └── utils/              # Route helpers and utilities
+├── .eslintrc.json
+├── .gitignore
+├── jsconfig.json
+├── next.config.mjs
+├── package.json
+├── package-lock.json
+├── README.md
+└── ...
+```
+
+## Pages
+
+- `/` — Landing / welcome screen
+- `/dashboard` — NFT holdings and reward summary
+- `/mint` — Minting cards for collection drops
+- `/stake` — Staking and reward allocation interface
+- `/gallery` — NFT collection gallery browser
+- `/rewards` — Reward tiers and claim details
+- `/air` — Airdrop-related presentation page
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm, yarn, or pnpm
+
+### Installation
+
+```bash
+npm install
+```
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm run build
+```
 
-## Learn More
+### Start Production Server
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Linting
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+npm run lint
+```
 
-## Deploy on Vercel
+## Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The project includes the following scripts from `package.json`:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```json
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint"
+}
+```
+
+## Notes
+
+- The project uses custom styling and assets in `public/` to create a themed NFT landing page experience.
+- The design and UI are tailored for a crypto/NFT brand and contain themed graphics, rewards, and collection metadata.
+- The project is implemented as a front-end showcase/demo and may be extended with real wallet integration, blockchain data, and backend APIs.
+
+## License
+
+This project currently does not include a custom license file. If needed, add one before publishing or distributing the project.
+
+## Author
+
+Project repository: `MuhammadShahab336/nft-web-app`
